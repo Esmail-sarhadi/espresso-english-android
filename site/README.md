@@ -13,19 +13,49 @@ online or offline, from disk or from a server.
 
 ```
 site/
-├── index.html                 # the whole page (semantic HTML5, RTL, JSON-LD)
+├── index.html                 # Persian landing page (semantic HTML5, RTL, JSON-LD)
+├── en.html                    # English landing page
+├── gallery.html               # media page — video + screenshot gallery
+├── gallery.js                 # lightbox for the gallery
+├── privacy.html               # privacy policy (fa + en, no scripts)
 ├── styles.css                 # all styling, design tokens at the top
-├── script.js                  # menu, smooth scroll, reveal, copy, modal (vanilla JS)
+├── script.js                  # menu, smooth scroll, reveal, copy, modal, pattern layer
 ├── README.md
 └── assets/
-    ├── fonts.css              # Vazirmatn embedded as base64 (see "Typography")
-    ├── Vazirmatn-Regular.woff2
-    ├── Vazirmatn-Bold.woff2
+    ├── fonts.css              # Vazirmatn variable font embedded as base64
+    ├── Vazirmatn-var.woff2
+    ├── hero-demo.gif          # rendered hero screen (24 frames, 4.4 s loop, ~0.9 MB)
+    ├── hero-poster.webp       # static frame used for reduced-motion visitors
     └── og.png                 # 1200×630 social preview image
 ```
 
 There is no `package.json`, no bundler, no framework and no third-party script. The only
 network-capable things in the markup are the placeholder footer links (`href="#"`).
+
+---
+
+## Design system — "Clear"
+
+`styles.css` is organised in numbered sections; the last two are the ones worth knowing about:
+
+- **§14 Pattern + motion.** A fixed, page-wide ambient layer: an aurora mesh
+  (`html::before`) that drifts on `transform` only, a thin diamond line-mesh
+  (`html::after`) masked so it fades below the fold, and a 3 % film-grain overlay.
+  On top of that sit the hero's orbit arc, the marquee strip injected after
+  `#why`, the scroll-progress hairline and the card/button micro-interactions.
+  Every animation is `transform`/`opacity` only, and the whole layer is switched
+  off under `prefers-reduced-motion` — where the hero GIF is swapped for
+  `hero-poster.webp`.
+- **§15 Accessibility / motion.** Reduced-motion and `prefers-contrast` overrides,
+  plus the print stylesheet.
+
+Palette: white canvas, `--ink #0B1224` type, one brand ramp
+`#4F46E5 → #6366F1 → #8B5CF6`, and supporting teal / amber / coral where a colour
+has a job. Body copy sits at ≥ 4.5:1, headings at ≥ 7:1.
+
+The hero phone screen is a **GIF**, not a video or a CSS animation: it keeps the
+page a single static bundle with no autoplay policy, no codec support questions
+and no JavaScript needed for the first impression.
 
 ---
 

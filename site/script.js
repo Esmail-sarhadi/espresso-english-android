@@ -10,21 +10,6 @@
   var root = doc.documentElement;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  /* ── Theme switch (paper / ink) ─────────────────────────────────────── */
-  var THEME_KEY = "espresso-theme";
-  Array.prototype.forEach.call(doc.querySelectorAll("[data-theme-toggle]"), function (btn) {
-    btn.addEventListener("click", function () {
-      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      var meta = doc.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute("content", next === "dark" ? "#17140F" : "#F5F0E6");
-      try { localStorage.setItem(THEME_KEY, next); } catch (err) {}
-      btn.setAttribute("aria-label", isEN
-        ? (next === "dark" ? "Switch to light theme" : "Switch to dark theme")
-        : (next === "dark" ? "تغییر به تم روشن" : "تغییر به تم تاریک"));
-    });
-  });
-
   /* ── Language choice (fa / en) ───────────────────────────────────────── */
   var LANG_KEY = "espresso-lang";
   var isEN = root.getAttribute("lang") === "en";
@@ -445,6 +430,24 @@
       child.style.setProperty("--reveal-delay", (i * 90) + "ms");
     });
   });
+
+  /* ------------------------------------------------- pointer-tracked glow */
+  var glowCards = doc.querySelectorAll(".card, .step");
+  if (!reduce && glowCards.length && window.matchMedia("(hover: hover)").matches) {
+    Array.prototype.forEach.call(glowCards, function (card) {
+      var frame = 0;
+      card.addEventListener("pointermove", function (e) {
+        if (frame) return;
+        frame = window.requestAnimationFrame(function () {
+          frame = 0;
+          var r = card.getBoundingClientRect();
+          if (!r.width || !r.height) return;
+          card.style.setProperty("--mx", (((e.clientX - r.left) / r.width) * 100).toFixed(1) + "%");
+          card.style.setProperty("--my", (((e.clientY - r.top) / r.height) * 100).toFixed(1) + "%");
+        });
+      });
+    });
+  }
 
   /* --------------------------------------------------------- progress bar */
   function onScroll() {
