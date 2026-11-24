@@ -1,110 +1,162 @@
-# Espresso English · اسپرسو انگلیش
-
 <p align="center">
-  <b>اپلیکیشن اندروید یادگیری زبان انگلیسی برای فارسی‌زبانان — آفلاین، رایگان، بدون تبلیغ</b><br>
-  <sub>An offline-first English learning app for Persian speakers · Android 7.0+ · Kotlin + Jetpack Compose</sub>
+  <a href="https://github.com/Esmail-sarhadi/espresso-english-android/blob/main/assets/readme/banner.png">
+    <img src="assets/readme/banner.png" alt="Espresso English — learn English by listening. 208 lessons, synced transcripts, Persian translation, fully offline." width="100%">
+  </a>
 </p>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-5.4.1-FFB03A">
-  <img alt="android" src="https://img.shields.io/badge/Android-7.0%2B-4FE0BE">
-  <img alt="size" src="https://img.shields.io/badge/APK-131%20MB-B49BFF">
-  <img alt="license" src="https://img.shields.io/badge/license-MIT-6FB8FF">
-  <img alt="price" src="https://img.shields.io/badge/price-free-FF8A6B">
+  <a href="https://github.com/Esmail-sarhadi/espresso-english-android/releases/latest"><img alt="version" src="https://img.shields.io/badge/version-5.4.1-FFB03A?style=flat-square"></a>
+  <img alt="android" src="https://img.shields.io/badge/Android-7.0%2B-4FE0BE?style=flat-square">
+  <img alt="size" src="https://img.shields.io/badge/APK-131%20MB-B49BFF?style=flat-square">
+  <img alt="price" src="https://img.shields.io/badge/price-free-FF8A6B?style=flat-square">
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-6FB8FF?style=flat-square">
+  <img alt="stars" src="https://img.shields.io/github/stars/Esmail-sarhadi/espresso-english-android?style=flat-square&color=FFB03A">
 </p>
 
----
+<p align="center">
+  <a href="https://esmail-sarhadi.github.io/espresso-english-android/"><b>Website</b></a> ·
+  <a href="#download"><b>Download</b></a> ·
+  <a href="https://esmail-sarhadi.github.io/espresso-english-android/web/"><b>Try in browser</b></a> ·
+  <a href="#features"><b>Features</b></a> ·
+  <a href="#architecture"><b>Architecture</b></a> ·
+  <a href="docs/MYKET-FA.md"><b>Publishing</b></a> ·
+  <a href="#فارسی"><b>فارسی</b></a>
+</p>
+
+**An offline-first Android app that teaches English by listening.** 208 lessons with a transcript that scrolls in time with the audio, a Persian translation on every line, spaced-repetition review, pronunciation scoring — plus two things you rarely see in a language app: **lyrics that follow whatever song is playing** on the phone, and a **floating bubble** that translates any English on screen without leaving the app you were reading.
+
+> Not affiliated with the Espresso English podcast. The lesson content belongs to its author — see [Content attribution](#content-attribution).
 
 <div dir="rtl" align="right">
 
-## این برنامه چیست؟
-
-**Espresso English** یک اپلیکیشن اندروید برای یادگیری انگلیسی با گوش دادن است: ۲۰۸ درس با متن همگام، ترجمهٔ فارسی خط‌به‌خط، واژه‌نامه، آزمون، مرور فاصله‌دار و تمرین تلفظ — همه در حافظهٔ گوشی و بدون نیاز به اینترنت.
-
-دو ابزار کمتر دیده‌شده هم دارد:
-
-- **ترانهٔ همگام** — آهنگی که در گوشی پخش می‌شود را تشخیص می‌دهد و متن آن را همراه با موسیقی جلو می‌برد؛ هر خط ترجمهٔ فارسی دارد.
-- **حباب ترجمه** — یک حباب کوچک روی هر برنامه‌ای شناور می‌ماند؛ با زدنش متن انگلیسی همان صفحه خوانده و ترجمه می‌شود، بدون اینکه از برنامه‌ای که در آن هستی بیرون بیایی.
-
-## امکانات
-
-| | |
-|---|---|
-| 🎧 **۲۰۸ درس صوتی** | متن همگام، ترجمهٔ فارسی، واژه‌نامه و آزمون برای هر درس |
-| 📴 **کاملاً آفلاین** | صدای عصبی (Piper) داخل برنامه — بدون اینترنت هم کار می‌کند |
-| 🎵 **ترانهٔ همگام** | تشخیص آهنگ در حال پخش + ترجمهٔ خط‌به‌خط + قاب RGB متحرک |
-| 🫧 **حباب شناور** | ترجمهٔ متن هر برنامه با یک ضربه، روی همهٔ برنامه‌ها |
-| 🔁 **مرور فاصله‌دار** | واژه‌ها در فاصله‌های بهینه برمی‌گردند (الگوریتم SM-2) |
-| 🎤 **تمرین تلفظ** | ضبط صدا و نمرهٔ دقت |
-| 📊 **آمار روزانه** | استریک، دقیقهٔ گوش دادن، واژهٔ ذخیره‌شده |
-| 🌙 **تم روشن/تاریک** | رابط فارسی راست‌به‌چپ، بدون ثبت‌نام و بدون ردیابی |
-
-## دانلود
-
-| منبع | لینک |
-|---|---|
-| **GitHub Releases** (همیشه آخرین نسخه) | [Releases](../../releases/latest) |
-| کافه‌بازار | _به‌زودی_ |
-| مایکت | _به‌زودی_ |
-| نسخهٔ وب (دمو در مرورگر) | [site/index.html](site/index.html) |
-
-> **کدام APK؟** برای گوشی واقعی نسخهٔ `-ARM` (۱۳۱ مگابایت) را بگیر. نسخهٔ کامل (۲۳۲ مگابایت) برای امولاتور و دستگاه‌های x86 است.
-
-## نصب
-
-1. فایل APK را دانلود کن.
-2. اگر اندروید هشدار داد، «نصب از منابع نامشخص» را برای مرورگر یا فایل‌منیجرت روشن کن.
-3. نصب کن و باز کن — اولین اجرا یک تور چهارصفحه‌ای فارسی نشان می‌دهد.
+> **خلاصهٔ فارسی** — یک اپ اندروید برای یادگیری انگلیسی با گوش دادن: ۲۰۸ درس با متن همگام و ترجمهٔ فارسی، مرور فاصله‌دار، تمرین تلفظ، ترانهٔ همگام با موسیقی و حباب شناور ترجمه. کاملاً آفلاین، رایگان، بدون ثبت‌نام و بدون تبلیغ.
 
 </div>
 
 ---
 
-## English
+## ▶ Watch it
 
-**Espresso English** is an offline-first Android app that teaches English through listening, built for Persian speakers. 208 lessons with synchronised transcripts, line-by-line Persian translation, vocabulary, quizzes, spaced repetition and pronunciation scoring — all bundled, no account, no ads, no telemetry.
+<p align="center">
+  <a href="https://github.com/Esmail-sarhadi/espresso-english-android/raw/main/store/Espresso-English-promo.mp4">
+    <img src="assets/readme/poster.jpg" alt="Watch the 20-second tour" width="100%">
+  </a>
+</p>
 
-Two features worth calling out:
+<p align="center">
+  <a href="https://github.com/Esmail-sarhadi/espresso-english-android/raw/main/store/Espresso-English-promo.mp4"><b>▶ 20-second tour (MP4, 1.7 MB)</b></a> ·
+  <a href="assets/readme/demo.gif"><b>GIF for sharing</b></a> ·
+  <a href="https://esmail-sarhadi.github.io/espresso-english-android/web/"><b>Live web demo</b></a>
+</p>
 
-- **Live lyric sync** — reads the media session of whatever is playing, scrolls the lyrics in time with the music and translates every line to Persian.
-- **Floating translate bubble** — a draggable bubble that stays on top of other apps. Tap it and the on-screen English text is OCR'd on-device and translated in an overlay panel.
+<p align="center">
+  <img src="assets/readme/demo.gif" alt="Espresso English demo" width="300">
+</p>
 
-### Tech stack
+---
 
-- Kotlin 2.2 · Jetpack Compose (Material 3) · Navigation Compose
-- Room (KSP) for lessons, vocabulary, SRS state and stats
-- Media3 / ExoPlayer + MediaSessionService for playback and lock-screen controls
-- Piper neural TTS bundled on-device, with the system TTS engine as a fallback
-- ML Kit text recognition (Latin) for the screen translator
-- `MediaProjection` foreground services for one-shot capture and the floating bubble
-- Keyless lyrics catalogues: LRCLIB, iTunes Search, Deezer, lyrics.ovh
-- Translation: Google `gtx` endpoint with MyMemory as a fallback
+## Why it exists
 
-### Build
+| The problem | What this app does instead |
+|---|---|
+| You have studied English for years and still freeze when someone speaks | 208 short lessons built around **listening**, not grammar tables |
+| Subtitles disappear before you finish reading them | The transcript **scrolls itself**; the line being spoken is lit up |
+| You pause, leave the app, look up a word, lose the thread | Translation sits **under every line**, and the floating bubble works **over other apps** |
+| Apps that need an account, a subscription and an internet connection | No signup, no ads, no telemetry — **the whole course is on the phone** |
+
+---
+
+## Features
+
+| | Feature | What it actually does |
+|---|---|---|
+| 🎧 | **208 lessons** | Real podcast lessons with synced transcript, vocabulary and a quiz |
+| 🌍 | **Line-by-line Persian** | Whole song or lesson translated in 1–2 requests, not 24 |
+| 🎵 | **Live lyric sync** | Reads the media session of whatever is playing and follows it, karaoke style |
+| 🫧 | **Floating translator** | Bubble over any app → on-device OCR → translation panel; drag it onto ✕ to dismiss |
+| 🔁 | **Spaced repetition** | SM-2 scheduling; words return right before you would forget them |
+| 🎤 | **Pronunciation** | Record yourself, get a score |
+| 📴 | **Truly offline** | Neural voice (sherpa-onnx + Piper) bundled — no network needed for lessons |
+| 🎨 | **Made for Persian** | RTL layout, Persian numerals, dark & light themes, adjustable type scale |
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="store/final/01-home.png" width="24%" alt="Home">
+  <img src="store/final/02-lesson.png" width="24%" alt="Lesson with synced transcript">
+  <img src="store/final/03-library.png" width="24%" alt="Library">
+  <img src="store/final/04-quiz.png" width="24%" alt="Quiz">
+</p>
+
+---
+
+## Architecture
+
+<p align="center">
+  <img src="assets/readme/architecture.svg" alt="Architecture: Compose UI, Room, Media3, MediaProjection OCR, lyrics and translation services" width="100%">
+</p>
+
+| Layer | Choice | Why |
+|---|---|---|
+| UI | Jetpack Compose · Material 3 | One design system across phone sizes, RTL by default |
+| Storage | Room + KSP | Lessons, vocabulary, SRS state and stats live on device |
+| Audio | Media3 / ExoPlayer + `MediaSessionService` | Lock-screen and notification controls for free |
+| Speech | sherpa-onnx + Piper voice | Offline neural TTS, ~36 MB, no cloud |
+| OCR | ML Kit text recognition | On-device; the screenshot never leaves the phone |
+| Capture | `MediaProjection` foreground services | One-shot scan **and** the persistent bubble |
+| Web | React + Vite → **PWA** | Same content in a browser, installable on iOS |
+
+---
+
+## Download
+
+| Source | Link | Notes |
+|---|---|---|
+| **GitHub Releases** | [Latest release](https://github.com/Esmail-sarhadi/espresso-english-android/releases/latest) | `-ARM.apk` (131 MB) for phones, `-universal.apk` (232 MB) for emulators |
+| Myket | _pending review_ | Free, no subscription |
+| Cafe Bazaar | _planned_ | Annual developer subscription required |
+| Web / iOS | [Open in browser](https://esmail-sarhadi.github.io/espresso-english-android/web/) | Add to Home Screen — works offline |
+
+**Install:** download the ARM APK → allow "install unknown apps" for your browser → open it. Android 7.0+.
+
+---
+
+## Build from source
 
 ```bash
-cd android-app
-./gradlew :app:assembleRelease -ParmOnly   # 131 MB, real phones
-./gradlew :app:assembleRelease             # 232 MB, universal
-./gradlew :app:testDebugUnitTest           # pure-JVM tests for the lyric/sync maths
+git clone https://github.com/Esmail-sarhadi/espresso-english-android.git
+cd espresso-english-android/android-app
+
+./gradlew :app:assembleDebug             # debug build
+./gradlew :app:assembleRelease -ParmOnly # 131 MB, real phones
+./gradlew :app:testDebugUnitTest         # lyric/sync maths, pure JVM
 ```
 
-You need JDK 21 (Android Studio's JBR works) and the Android SDK 36.
+Release signing reads `RELEASE_STORE_FILE`, `RELEASE_STORE_PASSWORD`, `RELEASE_KEY_ALIAS` and
+`RELEASE_KEY_PASSWORD` from `local.properties` or the environment. Without them the build still
+succeeds — it just produces an unsigned APK.
 
-### Project layout
+Web app:
 
+```bash
+cd espresso-english
+npm ci && npm run build   # → dist/
+npx cap sync ios          # → ios/App (Xcode project)
 ```
-android-app/          Android application (Kotlin)
-site/                 Marketing website (static, GitHub Pages ready)
-marketing/            Launch content: LinkedIn, Instagram, YouTube, 30-day calendar, SEO
-docs/PUBLISHING-FA.md Step-by-step guide to Bazaar / Myket / Google Play / GitHub
-```
+
+The iOS shell is built on a free macOS runner by [`.github/workflows/ios.yml`](.github/workflows/ios.yml) — no Mac required.
 
 ---
 
 ## Privacy
 
-No account, no analytics SDK, no advertising. Progress, vocabulary and settings live in a local Room database; the only network calls are the ones you trigger explicitly (lyrics lookup and translation). See [PRIVACY.md](PRIVACY.md).
+> No account, no ads, no analytics SDK. Progress and vocabulary live in a local database. Network calls happen only when you tap something: lyrics lookup and translation. The screen translator runs OCR **on device**; only the extracted text is sent for translation, never the image.
+
+Full policy: [esmail-sarhadi.github.io/…/privacy.html](https://esmail-sarhadi.github.io/espresso-english-android/privacy.html)
+
+---
 
 ## Content attribution
 
@@ -112,4 +164,31 @@ The lesson audio and transcripts are derived from the **Espresso English podcast
 
 ## License
 
-The source code is released under the [MIT License](LICENSE). That covers the code only — it does not extend to the third-party lesson content described above.
+Code: [MIT](LICENSE). That covers the code only — not the third-party lesson content above.
+
+<p align="center">
+  <a href="https://github.com/Esmail-sarhadi/espresso-english-android/stargazers"><b>⭐ If this is useful, star the repo</b></a>
+</p>
+
+---
+
+<div dir="rtl" align="right">
+
+## فارسی
+
+**Espresso English** یک اپ اندروید برای یادگیری انگلیسی با گوش دادن است.
+
+- **۲۰۸ درس** با متن انگلیسی هم‌زمان با صدا و ترجمهٔ فارسی خط‌به‌خط
+- **مرور فاصله‌دار**، آزمون، واژه‌نامه و تمرین تلفظ
+- **ترانهٔ همگام** — آهنگ در حال پخش را تشخیص می‌دهد و متنش را همراه موسیقی جلو می‌برد
+- **حباب شناور ترجمه** — روی هر برنامه‌ای؛ برای حذف، حباب را بکش و روی ✕ رها کن
+- **کاملاً آفلاین** — صدا داخل برنامه است، بدون نیاز به اینترنت
+- **بدون ثبت‌نام، بدون تبلیغ، بدون ردیابی**
+
+**نصب:** از بخش [Releases](https://github.com/Esmail-sarhadi/espresso-english-android/releases/latest) فایل `-ARM.apk` را دانلود کن (۱۳۱ مگابایت). اندروید ۷ و بالاتر.
+
+**نسخهٔ وب (آیفون):** [همین‌جا باز کن](https://esmail-sarhadi.github.io/espresso-english-android/web/) و از Safari گزینهٔ «Add to Home Screen» را بزن.
+
+راهنمای انتشار در استورها: [`docs/MYKET-FA.md`](docs/MYKET-FA.md) · [`docs/PUBLISHING-FA.md`](docs/PUBLISHING-FA.md)
+
+</div>

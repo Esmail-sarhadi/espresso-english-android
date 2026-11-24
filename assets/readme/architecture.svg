@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Espresso English architecture">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C0A10"/>
+      <stop offset="1" stop-color="#1A1424"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFB03A"/>
+      <stop offset="1" stop-color="#FF8A6B"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B49BFF"/>
+      <stop offset="1" stop-color="#6FB8FF"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A4C6E"/>
+    </marker>
+    <style>
+      .t { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+      .h { font-size: 17px; font-weight: 700; fill: #F8F2EC; }
+      .s { font-size: 13px; fill: #A99DB8; }
+      .lbl { font-size: 12px; fill: #7C7090; letter-spacing: .06em; text-transform: uppercase; }
+      .box { fill: #191521; stroke: #332B40; stroke-width: 1.5; }
+      .box-a { fill: rgba(255,176,58,.08); stroke: rgba(255,176,58,.45); stroke-width: 1.5; }
+      .box-c { fill: rgba(180,155,255,.08); stroke: rgba(180,155,255,.40); stroke-width: 1.5; }
+      .link { stroke: #5A4C6E; stroke-width: 1.6; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <g opacity="0.06" stroke="#FFFFFF">
+    <path d="M0 120H1200M0 240H1200M0 360H1200M0 480H1200M200 0V560M400 0V560M600 0V560M800 0V560M1000 0V560"/>
+  </g>
+
+  <text x="48" y="52" class="t lbl">ESPREssO ENGLISH · SYSTEM MAP</text>
+
+  <!-- Column labels -->
+  <text x="48" y="96" class="t lbl">APP · KOTLIN / COMPOSE</text>
+  <text x="470" y="96" class="t lbl">ON DEVICE</text>
+  <text x="880" y="96" class="t lbl">NETWORK · ONLY ON REQUEST</text>
+
+  <!-- UI -->
+  <rect x="48" y="120" width="300" height="120" rx="18" class="box box-a"/>
+  <text x="72" y="156" class="t h">Jetpack Compose UI</text>
+  <text x="72" y="180" class="t s">Lessons · Lyrics · Review · Scan</text>
+  <text x="72" y="202" class="t s">Persian RTL · dark &amp; light</text>
+  <text x="72" y="224" class="t s">Onboarding tour · settings</text>
+
+  <rect x="48" y="268" width="300" height="96" rx="18" class="box"/>
+  <text x="72" y="302" class="t h">Playback service</text>
+  <text x="72" y="326" class="t s">Media3 ExoPlayer + MediaSession</text>
+  <text x="72" y="348" class="t s">lock-screen &amp; notification controls</text>
+
+  <rect x="48" y="392" width="300" height="112" rx="18" class="box"/>
+  <text x="72" y="426" class="t h">Capture &amp; overlay</text>
+  <text x="72" y="450" class="t s">MediaProjection → OCR (ML Kit)</text>
+  <text x="72" y="472" class="t s">Floating bubble (WindowManager)</text>
+  <text x="72" y="494" class="t s">drag-to-delete target</text>
+
+  <!-- Device stores -->
+  <rect x="470" y="120" width="330" height="128" rx="18" class="box"/>
+  <text x="494" y="156" class="t h">Room database</text>
+  <text x="494" y="180" class="t s">208 lessons · vocabulary · SRS state</text>
+  <text x="494" y="202" class="t s">quiz results · streaks · stats</text>
+  <text x="494" y="224" class="t s">never leaves the phone</text>
+
+  <rect x="470" y="276" width="330" height="112" rx="18" class="box"/>
+  <text x="494" y="312" class="t h">Bundled neural TTS</text>
+  <text x="494" y="336" class="t s">sherpa-onnx · Piper voice</text>
+  <text x="494" y="358" class="t s">fully offline audio</text>
+
+  <rect x="470" y="416" width="330" height="88" rx="18" class="box"/>
+  <text x="494" y="450" class="t h">Media session reader</text>
+  <text x="494" y="474" class="t s">live position → lyric highlight</text>
+
+  <!-- Network -->
+  <rect x="880" y="120" width="272" height="112" rx="18" class="box box-c"/>
+  <text x="904" y="156" class="t h">Lyrics catalogues</text>
+  <text x="904" y="180" class="t s">LRCLIB · iTunes · Deezer</text>
+  <text x="904" y="202" class="t s">lyrics.ovh fallback</text>
+
+  <rect x="880" y="260" width="272" height="96" rx="18" class="box box-c"/>
+  <text x="904" y="296" class="t h">Translation</text>
+  <text x="904" y="320" class="t s">Google gtx · MyMemory</text>
+  <text x="904" y="342" class="t s">whole song in 1–2 calls</text>
+
+  <rect x="880" y="384" width="272" height="120" rx="18" class="box box-c"/>
+  <text x="904" y="420" class="t h">Updates</text>
+  <text x="904" y="444" class="t s">GitHub Releases · Myket</text>
+  <text x="904" y="466" class="t s">Cafe Bazaar (planned)</text>
+  <text x="904" y="488" class="t s">no account, no telemetry</text>
+
+  <!-- Links -->
+  <path class="link" d="M348 180 H440 Q462 180 462 202 V210 Q462 232 440 232 H420"/>
+  <path class="link" d="M348 316 H440 Q462 316 462 338 V352 Q462 374 440 374"/>
+  <path class="link" d="M348 448 H400 Q422 448 422 426 V404 Q422 382 444 382"/>
+  <path class="link" d="M348 448 H404 Q426 448 426 470 V486 Q426 508 448 508"/>
+  <path class="link" d="M800 200 H856 Q878 200 878 222 V244 Q878 266 900 266"/>
+  <path class="link" d="M800 330 H856 Q878 330 878 308"/>
+  <path class="link" d="M800 460 H856 Q878 460 878 482 V492 Q878 514 900 514"/>
+
+  <!-- caption -->
+  <text x="48" y="540" class="t s">Every arrow crossing the middle column is a call the user triggered — nothing is uploaded in the background.</text>
+</svg>
