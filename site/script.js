@@ -10,6 +10,21 @@
   var root = doc.documentElement;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+  /* ── Theme switch (paper / ink) ─────────────────────────────────────── */
+  var THEME_KEY = "espresso-theme";
+  Array.prototype.forEach.call(doc.querySelectorAll("[data-theme-toggle]"), function (btn) {
+    btn.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      var meta = doc.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", next === "dark" ? "#17140F" : "#F5F0E6");
+      try { localStorage.setItem(THEME_KEY, next); } catch (err) {}
+      btn.setAttribute("aria-label", isEN
+        ? (next === "dark" ? "Switch to light theme" : "Switch to dark theme")
+        : (next === "dark" ? "تغییر به تم روشن" : "تغییر به تم تاریک"));
+    });
+  });
+
   /* ── Language choice (fa / en) ───────────────────────────────────────── */
   var LANG_KEY = "espresso-lang";
   var isEN = root.getAttribute("lang") === "en";
@@ -30,7 +45,8 @@
 
   // the Persian page sends a visitor who chose English back to en.html once.
   // ?lang=fa (or any ?lang=) means "I meant to be here" — never bounce it.
-  if (!isEN) {
+  var isHome = /(^|\/)(|index\.html)$/.test(window.location.pathname);
+  if (!isEN && isHome) {
     var search = window.location.search;
     if (/[?&]lang=fa\b/.test(search)) rememberLang("fa");
 
@@ -379,14 +395,15 @@
   }
 })();
 
-/* ── Motion & texture layer (formerly enhance.js) ───────────────────────── */
-/* Decorative motion layer — enhancement only, never required for the page to work. */
+/* ═══════════════════════════════════════════════════════════════════════════
+   Editorial motion layer — inlined
+   ═══════════════════════════════════════════════════════════════════════════ */
+/* Editorial motion layer — enhancement only, never required for the page. */
 (function () {
   "use strict";
 
   var doc = document;
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var fine = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
   function el(tag, cls, parent) {
     var node = doc.createElement(tag);
@@ -396,30 +413,27 @@
   }
 
   /* ---------------------------------------------------------- injections */
-  el("div", "fx-aurora").innerHTML =
-    '<div class="fx-aurora__blob fx-aurora__blob--a"></div>' +
-    '<div class="fx-aurora__blob fx-aurora__blob--b"></div>' +
-    '<div class="fx-aurora__blob fx-aurora__blob--c"></div>';
-
-  el("div", "fx-grain");
-  el("div", "fx-progress");
+  var progress = el("div", "fx-progress");
+  progress.setAttribute("aria-hidden", "true");
 
   var hero = doc.querySelector(".hero");
-  if (hero) {
-    var rings = el("div", "fx-rings");
-    hero.appendChild(rings);
+  if (hero && hero.querySelector(".hero__device")) {
+    var device = hero.querySelector(".hero__device");
+    var marks = el("div", "fx-rings", device);
+    marks.setAttribute("aria-hidden", "true");
   }
 
   var why = doc.getElementById("why");
   if (why && why.nextElementSibling) {
     var ticker = el("div", "fx-ticker");
-    var phrases = [
-      "۲۰۸ درس واقعی", "کاملاً آفلاین", "بدون تبلیغ", "متن همگام",
-      "ترجمهٔ فارسی", "حباب شناور", "رایگان", "بدون ثبتنام"
-    ];
-    var line = phrases
-      .map(function (p) { return "<span>" + p + "<b>✦</b></span>"; })
-      .join("");
+    ticker.setAttribute("aria-hidden", "true");
+    var isEn = doc.documentElement.getAttribute("lang") === "en";
+    var phrases = isEn
+      ? ["208 REAL LESSONS", "100% OFFLINE", "NO ADS", "SYNCED TRANSCRIPTS", "PERSIAN TRANSLATION", "FLOATING BUBBLE", "FREE FOREVER", "NO SIGN-UP"]
+      : ["۲۰۸ درس واقعی", "کاملاً آفلاین", "بدون تبلیغ", "متن همگام", "ترجمهٔ فارسی", "حباب شناور", "رایگان", "بدون ثبتنام"];
+    var line = phrases.map(function (p) {
+      return "<span>" + p + "<b>✦</b></span>";
+    }).join("");
     ticker.innerHTML = '<div class="fx-ticker__track">' + line + line + "</div>";
     why.parentNode.insertBefore(ticker, why.nextElementSibling);
   }
@@ -432,40 +446,25 @@
     });
   });
 
-  /* ------------------------------------------------------ scroll progress */
-  var bar = doc.querySelector(".fx-progress");
-  var device = doc.querySelector(".hero__device");
-  var glows = doc.querySelectorAll(".hero__glow");
-  var ticking = false;
-
+  /* --------------------------------------------------------- progress bar */
   function onScroll() {
     var max = doc.documentElement.scrollHeight - window.innerHeight;
     var p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
-    bar.style.width = (p * 100).toFixed(2) + "%";
-
-    if (!reduce && window.scrollY < window.innerHeight * 1.5) {
-      var y = window.scrollY;
-      if (device) device.style.transform = "translate3d(0," + (-y * 0.045).toFixed(1) + "px,0)";
-      Array.prototype.forEach.call(glows, function (g, i) {
-        g.style.transform = "translate3d(0," + (y * (i ? 0.05 : 0.09)).toFixed(1) + "px,0)";
-      });
-    }
-    ticking = false;
+    progress.style.width = (p * 100).toFixed(2) + "%";
   }
-  window.addEventListener("scroll", function () {
-    if (!ticking) { window.requestAnimationFrame(onScroll); ticking = true; }
-  }, { passive: true });
-  onScroll();
+  if (!reduce) {
+    var ticking = false;
+    window.addEventListener("scroll", function () {
+      if (!ticking) { window.requestAnimationFrame(function () { onScroll(); ticking = false; }); ticking = true; }
+    }, { passive: true });
+    onScroll();
+  }
 
   /* ------------------------------------------------------------- counters */
   var western = "0123456789";
   var persian = "۰۱۲۳۴۵۶۷۸۹";
-  function toFa(n) {
-    return String(n).replace(/[0-9]/g, function (d) { return persian[western.indexOf(d)]; });
-  }
-  function toEn(s) {
-    return String(s).replace(/[۰-۹]/g, function (d) { return western[persian.indexOf(d)]; });
-  }
+  function toFa(n) { return String(n).replace(/[0-9]/g, function (d) { return persian[western.indexOf(d)]; }); }
+  function toEn(s) { return String(s).replace(/[۰-۹]/g, function (d) { return western[persian.indexOf(d)]; }); }
 
   var counters = doc.querySelectorAll(".stat__num");
   if (counters.length && !reduce && "IntersectionObserver" in window) {
@@ -479,12 +478,14 @@
         var target = parseInt(match[0], 10);
         if (!isFinite(target) || target < 2) { io.unobserve(node); return; }
         var suffix = raw.slice(match.index + match[0].length);
+        var isFa = /[۰-۹]/.test(node.textContent);
         var start = performance.now();
-        var duration = 1250;
+        var duration = 1200;
         function tick(now) {
           var t = Math.min(1, (now - start) / duration);
           var eased = 1 - Math.pow(1 - t, 3);
-          node.textContent = toFa(Math.round(target * eased)) + suffix;
+          var value = String(Math.round(target * eased));
+          node.textContent = (isFa ? toFa(value) : value) + suffix;
           if (t < 1) window.requestAnimationFrame(tick);
         }
         window.requestAnimationFrame(tick);
@@ -492,17 +493,5 @@
       });
     }, { threshold: 0.5 });
     Array.prototype.forEach.call(counters, function (c) { io.observe(c); });
-  }
-
-  /* ---------------------------------------------------------- pointer fx */
-  // Card spotlight only. No cursor glow, magnetic buttons or 3D tilt: calmer, cheaper, more credible.
-  if (fine && !reduce) {
-    Array.prototype.forEach.call(doc.querySelectorAll(".card"), function (card) {
-      card.addEventListener("pointermove", function (event) {
-        var r = card.getBoundingClientRect();
-        card.style.setProperty("--mx", (((event.clientX - r.left) / r.width) * 100).toFixed(1) + "%");
-        card.style.setProperty("--my", (((event.clientY - r.top) / r.height) * 100).toFixed(1) + "%");
-      }, { passive: true });
-    });
   }
 })();
