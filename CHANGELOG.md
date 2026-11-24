@@ -3,6 +3,20 @@
 All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [5.4.1] — 2026-11-24
+
+### Fixed
+- The floating bubble was invisible on Android 11+ because overlay windows were added through the
+  service's own `WindowManager` (not a visual context). It now derives a display context and a
+  `TYPE_APPLICATION_OVERLAY` window context, which is the documented path.
+
+### Added
+- **Drag to delete**: while dragging the bubble a red ✕ target fades in at the bottom of the
+  screen; dropping the bubble on it removes the bubble and stops the service. The ✕ target grows
+  and turns solid red when the bubble hovers over it.
+- The lyrics sheet is wrapped in a **rotating rainbow frame with spectrum bars** on all four
+  edges that pulse with the track.
+
 ## [5.4.0] — 2026-11-24
 
 ### Added

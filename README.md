@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-5.4.0-FFB03A">
+  <img alt="version" src="https://img.shields.io/badge/version-5.4.1-FFB03A">
   <img alt="android" src="https://img.shields.io/badge/Android-7.0%2B-4FE0BE">
   <img alt="size" src="https://img.shields.io/badge/APK-131%20MB-B49BFF">
   <img alt="license" src="https://img.shields.io/badge/license-MIT-6FB8FF">
