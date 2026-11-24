@@ -1,0 +1,29 @@
+# Build output
+android-app/build/
+android-app/app/build/
+android-app/.gradle/
+android-app/local.properties
+.gradle/
+*.iml
+.idea/
+
+# Node (web studio)
+espresso-english/node_modules/
+espresso-english/dist/
+node_modules/
+
+# Release binaries — ship these as GitHub Release assets, not in git
+*.apk
+*.aab
+!github/releases/*.apk
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+_tap.py
+_e2e*.sh
+_sync_test.sh
+_shots/
+_work/
+_bulk/
