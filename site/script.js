@@ -10,6 +10,42 @@
   var root = doc.documentElement;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+  /* ── Language choice (fa / en) ───────────────────────────────────────── */
+  var LANG_KEY = "espresso-lang";
+  var isEN = root.getAttribute("lang") === "en";
+
+  function rememberLang(lang) {
+    try {
+      localStorage.setItem(LANG_KEY, lang);
+    } catch (err) {
+      /* private mode or storage disabled — the link still navigates */
+    }
+  }
+
+  // any language link carries hreflang; remember the one the visitor picked
+  doc.addEventListener("click", function (e) {
+    var link = e.target.closest("a[hreflang]");
+    if (link) rememberLang(link.getAttribute("hreflang"));
+  });
+
+  // the Persian page sends a visitor who chose English back to en.html once.
+  // ?lang=fa (or any ?lang=) means "I meant to be here" — never bounce it.
+  if (!isEN) {
+    var search = window.location.search;
+    if (/[?&]lang=fa\b/.test(search)) rememberLang("fa");
+
+    var savedLang = null;
+    try {
+      savedLang = localStorage.getItem(LANG_KEY);
+    } catch (err) {
+      savedLang = null;
+    }
+    if (savedLang === "en" && !/[?&]lang=/.test(search)) {
+      window.location.replace("en.html" + window.location.hash);
+      return;
+    }
+  }
+
   /* ── Navbar: shadow after scroll ─────────────────────────────────────── */
   var nav = doc.getElementById("nav");
 
@@ -31,7 +67,9 @@
     nav.classList.toggle("is-open", open);
     doc.body.classList.toggle("menu-open", open && window.innerWidth <= 900);
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "بستن منو" : "باز کردن منو");
+    toggle.setAttribute("aria-label", open
+      ? (isEN ? "Close menu" : "بستن منو")
+      : (isEN ? "Open menu" : "باز کردن منو"));
   }
 
   if (toggle) {
@@ -171,6 +209,21 @@
   /* ── Copy the download link ──────────────────────────────────────────── */
   var APK_FALLBACK = "assets/Espresso-English-5.4.0.apk";
 
+  // feedback wording follows the page language
+  var COPY_TEXT = isEN
+    ? {
+        ok: "Copied ✓",
+        fail: "Not copied",
+        okMsg: "Download link copied to the clipboard.",
+        failMsg: "Automatic copy didn't work — select the link and copy it yourself."
+      }
+    : {
+        ok: "کپی شد ✓",
+        fail: "کپی نشد",
+        okMsg: "لینک دانلود در کلیپ‌بورد کپی شد.",
+        failMsg: "کپی خودکار ممکن نشد؛ لینک را دستی انتخاب کن."
+      };
+
   // read the link from the page so editing the download button is enough
   function apkHref() {
     var link = doc.querySelector('a[download][href$=".apk"], a[href$=".apk"]');
@@ -226,8 +279,8 @@
     var url = apkUrl();
 
     var done = function (ok) {
-      flashButton(button, ok ? "کپی شد ✓" : "کپی نشد");
-      announce(ok ? "لینک دانلود در کلیپ‌بورد کپی شد." : "کپی خودکار ممکن نشد؛ لینک را دستی انتخاب کن.");
+      flashButton(button, ok ? COPY_TEXT.ok : COPY_TEXT.fail);
+      announce(ok ? COPY_TEXT.okMsg : COPY_TEXT.failMsg);
     };
 
     if (navigator.clipboard && navigator.clipboard.writeText) {

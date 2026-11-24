@@ -2153,3 +2153,169 @@ body.menu-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .watch__panel::before { opacity: 0.3; }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Language switcher — the small pill that jumps between index.html and en.html
+   ───────────────────────────────────────────────────────────────────────── */
+
+.nav__links a.nav__link--lang {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.nav__links a.nav__link--lang:hover {
+  color: var(--amber);
+  border-color: rgba(255, 176, 58, 0.55);
+  background: rgba(255, 176, 58, 0.08);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LTR overrides — everything above was written for dir="rtl" (index.html).
+   The sheet already leans on logical properties, so only the handful of
+   physical values below need a mirror for en.html. Nothing here applies to
+   the Persian page.
+   ═════════════════════════════════════════════════════════════════════════ */
+
+/* Persian typography is tuned for Vazirmatn (looser leading, taller x-height).
+   Latin copy reads better in the platform UI font with a tighter default. */
+[dir="ltr"] body {
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.72;
+}
+
+/* .skip-link centres itself with inset-inline-start: 50% + translateX(50%),
+   which only lands in the middle when the inline start is the right edge. */
+[dir="ltr"] .skip-link { transform: translateX(-50%); }
+
+/* Persian translation lines keep the right edge on an LTR page: they sit under
+   an English line and read as subtitles, exactly as the app renders them. */
+[dir="ltr"] .lyric .fa,
+[dir="ltr"] .sheet__fa,
+[dir="ltr"] .mini__exfa { text-align: right; }
+
+/* .pbar__fill is pinned to inset-inline-end so it fills towards the start in
+   RTL; in LTR that would fill from the right, which reads backwards. */
+[dir="ltr"] .pbar__fill { inset-inline-start: 0; inset-inline-end: auto; }
+
+/* The install guide numbers its steps with Persian digits; use Latin ones. */
+[dir="ltr"] .modal__steps li::before { content: counter(mstep); }
+
+/* Under 640px the base sheet flushes centred headings to the right edge, which
+   is the trailing edge in RTL and the wrong one in LTR. */
+@media (max-width: 640px) {
+  [dir="ltr"] .section__head--center { text-align: left; }
+  [dir="ltr"] .cta__panel { text-align: left; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Media gallery
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.gal-hero {
+  padding: calc(var(--nav-h) + 54px) 0 10px;
+  text-align: center;
+}
+.gal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+.gal-card {
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  padding: 10px;
+  transition: transform .25s ease, border-color .25s ease;
+}
+.gal-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 176, 58, .5);
+}
+.gal-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--r-md);
+  cursor: zoom-in;
+}
+.gal-card figcaption {
+  padding: 12px 8px 6px;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+}
+.gal-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 22px;
+}
+.gal-video {
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  overflow: hidden;
+}
+.gal-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 72vh;
+  margin-inline: auto;
+  background: #000;
+  object-fit: contain;
+}
+.gal-video__meta {
+  padding: 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+}
+.gal-video__meta b { color: var(--amber); font-size: 14px; }
+.gal-video__meta span { color: var(--muted); font-size: 13px; }
+
+.gal-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(8, 6, 12, .95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.gal-lightbox.is-open { display: flex; }
+.gal-lightbox img {
+  max-height: 90vh;
+  max-width: 92vw;
+  border-radius: 18px;
+  box-shadow: 0 30px 90px rgba(0,0,0,.7);
+}
+.gal-lightbox button {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 22px;
+  cursor: pointer;
+}
+.gal-lightbox__nav {
+  position: absolute;
+  inset-inline: 20px;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.gal-lightbox__nav button {
+  position: static;
+  pointer-events: auto;
+}
