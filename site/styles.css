@@ -2319,3 +2319,264 @@ body.menu-open { overflow: hidden; }
   position: static;
   pointer-events: auto;
 }
+
+/* ── 16. Motion & texture layer (formerly enhance.css) ─────────────────── */
+/* ═══════════════════════════════════════════════════════════════════════════
+   Motion & texture layer
+   Everything here is decorative. All motion is disabled under
+   prefers-reduced-motion, and every layer is pointer-events:none.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+main,
+header.nav,
+footer.footer,
+.modal {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------------------------------------------------------------- grain */
+.fx-grain {
+  position: fixed;
+  inset: -50%;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+/* --------------------------------------------------------------- aurora */
+.fx-aurora {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.fx-aurora__blob {
+  position: absolute;
+  width: 46vw;
+  height: 46vw;
+  min-width: 420px;
+  min-height: 420px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.16;
+  will-change: transform;
+}
+.fx-aurora__blob--a {
+  top: -12vh;
+  inset-inline-start: -8vw;
+  background: radial-gradient(circle, var(--amber), transparent 68%);
+  animation: drift-a 24s ease-in-out infinite alternate;
+}
+.fx-aurora__blob--b {
+  top: 28vh;
+  inset-inline-end: -14vw;
+  background: radial-gradient(circle, var(--lilac), transparent 68%);
+  animation: drift-b 31s ease-in-out infinite alternate;
+}
+.fx-aurora__blob--c {
+  bottom: -18vh;
+  inset-inline-start: 22vw;
+  background: radial-gradient(circle, var(--mint), transparent 70%);
+  opacity: 0.1;
+  animation: drift-c 27s ease-in-out infinite alternate;
+}
+@keyframes drift-a { to { transform: translate3d(14vw, 12vh, 0) scale(1.18); } }
+@keyframes drift-b { to { transform: translate3d(-18vw, -8vh, 0) scale(0.86); } }
+@keyframes drift-c { to { transform: translate3d(8vw, -14vh, 0) scale(1.25); } }
+
+/* --------------------------------------------------------- scroll meter */
+.fx-progress {
+  position: fixed;
+  top: 0;
+  inset-inline-start: 0;
+  height: 3px;
+  width: 0;
+  z-index: 120;
+  background: var(--grad-warm);
+  box-shadow: 0 0 16px rgba(255, 176, 58, 0.6);
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------ cursor glow */
+.fx-cursor {
+  position: fixed;
+  width: 520px;
+  height: 520px;
+  margin: -260px 0 0 -260px;
+  border-radius: 50%;
+  z-index: 55;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(circle, rgba(255, 176, 58, 0.09), rgba(180, 155, 255, 0.05) 42%, transparent 70%);
+}
+.fx-cursor.is-visible { opacity: 1; }
+
+/* -------------------------------------------------------------- marquee */
+.fx-ticker {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background: linear-gradient(90deg, rgba(255,176,58,.06), rgba(180,155,255,.06), rgba(79,224,190,.06));
+  padding: 17px 0;
+  margin-block: 10px 0;
+}
+.fx-ticker__track {
+  display: flex;
+  width: max-content;
+  direction: ltr;
+  animation: ticker 34s linear infinite;
+}
+.fx-ticker__track span {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  white-space: nowrap;
+  padding-inline-end: 42px;
+}
+.fx-ticker__track b {
+  color: var(--amber);
+  font-weight: 700;
+  padding-inline: 12px;
+}
+@keyframes ticker { to { transform: translateX(-50%); } }
+.fx-ticker:hover .fx-ticker__track { animation-play-state: paused; }
+
+/* ----------------------------------------------------------- title shine */
+.section__title,
+.hero__title {
+  background-size: 260% 100%;
+  animation: title-shine 14s ease-in-out infinite alternate;
+}
+@keyframes title-shine {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* ------------------------------------------------------------ card tilt */
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 176, 58, 0.12), transparent 60%);
+}
+.card:hover::after { opacity: 1; }
+.card:hover {
+  border-color: rgba(255, 176, 58, 0.45);
+  box-shadow: 0 30px 70px -40px rgba(0, 0, 0, 0.9);
+}
+
+/* --------------------------------------------------------------- counters */
+.stat__num {
+  font-variant-numeric: tabular-nums;
+  transition: transform 0.4s ease;
+}
+.stat:hover .stat__num { transform: translateY(-3px); }
+
+/* --------------------------------------------------------- hero details */
+.hero__device { transition: transform 0.12s linear; }
+.hero__glow { transition: transform 0.16s linear; }
+
+.fx-rings {
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  inset-inline-end: -140px;
+  top: 30px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.35;
+  background: repeating-radial-gradient(circle, transparent 0 46px, rgba(255,176,58,.10) 47px 48px);
+  animation: ring-spin 60s linear infinite;
+}
+@keyframes ring-spin { to { transform: rotate(360deg); } }
+
+/* --------------------------------------------------------- magnetic btn */
+.btn { transition: transform 0.22s cubic-bezier(.2,.8,.2,1), box-shadow 0.22s ease; }
+.btn:hover { box-shadow: 0 14px 36px -18px rgba(255, 176, 58, 0.7); }
+
+/* ----------------------------------------------------------- reveal bump */
+.reveal { transition-delay: var(--reveal-delay, 0ms) !important; }
+
+@media (max-width: 760px) {
+  .fx-aurora__blob { width: 80vw; height: 80vw; }
+  .fx-rings { display: none; }
+  .fx-cursor { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-grain,
+  .fx-aurora__blob,
+  .fx-ticker__track,
+  .section__title,
+  .hero__title,
+  .fx-rings { animation: none !important; }
+  .fx-cursor { display: none; }
+  .card, .btn, .hero__device, .hero__glow { transition: none !important; transform: none !important; }
+  .card::after { display: none; }
+}
+
+/* ── 17. Refinement layer ────────────────────────────────────────────────
+   A calmer, more precise finish: type, rhythm, surfaces, focus, perf.
+   ───────────────────────────────────────────────────────────────────── */
+:root { --ring: 0 0 0 3px rgba(255, 176, 58, 0.55); --hair: inset 0 1px 0 rgba(255, 255, 255, 0.06); }
+::selection { background: rgba(255, 176, 58, 0.32); color: #fff; }
+html { scrollbar-color: #3a3148 var(--bg); text-rendering: optimizeLegibility; }
+body { font-feature-settings: "kern", "liga"; }
+
+/* type: balanced headings, readable measure, tighter display tracking */
+h1, h2, h3, .section__title { text-wrap: balance; letter-spacing: -0.012em; }
+p, li { text-wrap: pretty; }
+.section__head p, .lead { max-width: 62ch; }
+.section__title { line-height: 1.28; }
+
+/* surfaces: one hairline highlight + one shadow language everywhere */
+.card, .faq__item, .stat, .watch__panel, .facts > * {
+  box-shadow: var(--hair), var(--shadow-card);
+  border-color: var(--line-soft);
+}
+.card:hover { border-color: rgba(255, 176, 58, 0.35); }
+
+/* controls: clear states, comfortable targets */
+.btn { min-height: 46px; }
+.btn:active { transform: translateY(1px) scale(0.99); }
+:focus-visible { outline: none; box-shadow: var(--ring); border-radius: var(--r-xs); }
+.nav__links a { border-radius: var(--r-pill); }
+
+/* nav: quieter glass, hairline instead of heavy shadow */
+.nav.is-scrolled { box-shadow: 0 1px 0 var(--line-soft); backdrop-filter: saturate(1.4) blur(16px); }
+
+/* calmer ambience: smaller aurora, no cursor glow, slower ticker */
+.fx-aurora__blob { opacity: 0.11; }
+.fx-aurora__blob--c { opacity: 0.07; }
+.fx-cursor { display: none; }
+.fx-ticker__track { animation-duration: 60s; }
+
+/* perf: skip rendering of off-screen sections until they are near the viewport */
+@media (min-width: 761px) {
+  .section:not(.why):not(.hero) { content-visibility: auto; contain-intrinsic-size: auto 760px; }
+}
+
+/* media never overflows; video poster keeps its ratio while loading */
+img, video, svg { max-width: 100%; }
+.watch__video { aspect-ratio: 9 / 16; max-height: 78vh; background: #000; }
+
+@media (forced-colors: active) {
+  .btn, .card, .faq__item { border: 1px solid CanvasText; }
+}
+@media print {
+  .fx-aurora, .fx-grain, .fx-progress, .fx-ticker, .nav, .modal { display: none !important; }
+  body { background: #fff; color: #000; }
+}
