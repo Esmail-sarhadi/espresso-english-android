@@ -1,4 +1,8 @@
 <p align="center">
+  <b>English</b> · <a href="README.fa.md">فارسی</a>
+</p>
+
+<p align="center">
   <a href="https://github.com/Esmail-sarhadi/espresso-english-android/blob/main/assets/readme/banner.png">
     <img src="assets/readme/banner.png" alt="Espresso English — learn English by listening. 208 lessons, synced transcripts, Persian translation, fully offline." width="100%">
   </a>
@@ -20,7 +24,7 @@
   <a href="#features"><b>Features</b></a> ·
   <a href="#architecture"><b>Architecture</b></a> ·
   <a href="docs/MYKET-FA.md"><b>Publishing</b></a> ·
-  <a href="#فارسی"><b>فارسی</b></a>
+  <a href="README.fa.md"><b>فارسی</b></a>
 </p>
 
 **An offline-first Android app that teaches English by listening.** 208 lessons with a transcript that scrolls in time with the audio, a Persian translation on every line, spaced-repetition review, pronunciation scoring — plus two things you rarely see in a language app: **lyrics that follow whatever song is playing** on the phone, and a **floating bubble** that translates any English on screen without leaving the app you were reading.
@@ -176,19 +180,12 @@ Code: [MIT](LICENSE). That covers the code only — not the third-party lesson c
 
 ## فارسی
 
-**Espresso English** یک اپ اندروید برای یادگیری انگلیسی با گوش دادن است.
+این اپ برای فارسی‌زبان‌ها ساخته شده: ۲۰۸ درس با متن همگام و ترجمهٔ فارسی، مرور فاصله‌دار، تمرین تلفظ، ترانهٔ همگام با موسیقی و حباب شناور ترجمه — کاملاً آفلاین، رایگان و بدون ثبت‌نام.
 
-- **۲۰۸ درس** با متن انگلیسی هم‌زمان با صدا و ترجمهٔ فارسی خط‌به‌خط
-- **مرور فاصله‌دار**، آزمون، واژه‌نامه و تمرین تلفظ
-- **ترانهٔ همگام** — آهنگ در حال پخش را تشخیص می‌دهد و متنش را همراه موسیقی جلو می‌برد
-- **حباب شناور ترجمه** — روی هر برنامه‌ای؛ برای حذف، حباب را بکش و روی ✕ رها کن
-- **کاملاً آفلاین** — صدا داخل برنامه است، بدون نیاز به اینترنت
-- **بدون ثبت‌نام، بدون تبلیغ، بدون ردیابی**
+**نسخهٔ کامل فارسی این صفحه:** [**README.fa.md**](README.fa.md)
 
-**نصب:** از بخش [Releases](https://github.com/Esmail-sarhadi/espresso-english-android/releases/latest) فایل `-ARM.apk` را دانلود کن (۱۳۱ مگابایت). اندروید ۷ و بالاتر.
+**نصب:** از بخش [Releases](https://github.com/Esmail-sarhadi/espresso-english-android/releases/latest) فایل `-ARM.apk` را بگیر (۱۳۱ مگابایت).
 
-**نسخهٔ وب (آیفون):** [همین‌جا باز کن](https://esmail-sarhadi.github.io/espresso-english-android/web/) و از Safari گزینهٔ «Add to Home Screen» را بزن.
-
-راهنمای انتشار در استورها: [`docs/MYKET-FA.md`](docs/MYKET-FA.md) · [`docs/PUBLISHING-FA.md`](docs/PUBLISHING-FA.md)
+**آیفون:** [نسخهٔ وب](https://esmail-sarhadi.github.io/espresso-english-android/web/) را در Safari باز کن و «Add to Home Screen» را بزن.
 
 </div>
