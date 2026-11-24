@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Espresso English Podcast",
+    "host": "Shayna Oliveira",
+    "level": "beginner",
+    "accent": "American",
+    "url": "https://www.espressoenglish.net/",
+    "descriptionFa": "درس‌های کوتاه یک تا سه دقیقه‌ای درباره گرامر، واژگان، تلفظ و عبارت‌های روزمره. هر قسمت یک نکته روشن و کاربردی دارد.",
+    "whyFa": "برای شروع عالی است: قسمت‌ها کوتاه‌اند، جمله‌ها ساده و شمرده گفته می‌شوند و همین‌جا در سایت با زیرنویس کامل و آزمون در دسترس‌اند.",
+    "tags": ["کوتاه", "گرامر", "واژگان"],
+    "badge": "همین‌جا"
+  },
+  {
+    "name": "6 Minute English",
+    "host": "BBC Learning English",
+    "level": "intermediate",
+    "accent": "British",
+    "url": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english",
+    "descriptionFa": "هر قسمت دقیقاً شش دقیقه است: یک موضوع جذاب، چند واژه کلیدی و یک گفت‌وگوی دو نفره. متن کامل و واژه‌نامه هم روی سایت BBC هست.",
+    "whyFa": "بهترین گزینه برای عادت روزانه. طول ثابت شش دقیقه‌ای باعث می‌شود راحت در برنامه روزانه جا شود و لهجه بریتانیایی را هم تمرین کنی.",
+    "tags": ["روزانه", "بریتیش", "متن رایگان"],
+    "badge": "پیشنهاد ویژه"
+  },
+  {
+    "name": "The English We Speak",
+    "host": "BBC Learning English",
+    "level": "intermediate",
+    "accent": "British",
+    "url": "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak",
+    "descriptionFa": "سه دقیقه درباره یک اصطلاح یا عبارت محاوره‌ای روز؛ با مثال و توضیح اینکه در چه موقعیتی استفاده می‌شود.",
+    "whyFa": "اگر جمله‌های کتابی می‌گویی ولی در فیلم و مکالمه واقعی گیر می‌کنی، این پادکست همان شکاف را پر می‌کند.",
+    "tags": ["اصطلاح", "محاوره", "کوتاه"]
+  },
+  {
+    "name": "VOA Learning English",
+    "host": "Voice of America",
+    "level": "beginner",
+    "accent": "American",
+    "url": "https://learningenglish.voanews.com/",
+    "descriptionFa": "اخبار و درس‌های انگلیسی با سرعت آهسته‌تر و واژگان محدود. متن و فایل صوتی هر بخش روی سایت موجود است.",
+    "whyFa": "برای مبتدی‌ها یا کسی که تازه گوش دادن به اخبار را شروع کرده، سرعت آرام و واژه‌های کنترل‌شده فشار را کم می‌کند.",
+    "tags": ["خبر", "آهسته", "متن رایگان"]
+  },
+  {
+    "name": "All Ears English",
+    "host": "Lindsay & Michelle",
+    "level": "intermediate",
+    "accent": "American",
+    "url": "https://www.allearsenglish.com/",
+    "descriptionFa": "گفت‌وگوی دو مدرس درباره مکالمه واقعی آمریکایی، ارتباط گرفتن، و عبارت‌هایی که در زندگی روزمره می‌شنوی.",
+    "whyFa": "ریتم طبیعی مکالمه را می‌آموزی؛ بیشتر از واژه‌ی جدید، طرز بیان و لحن را تمرین می‌کنی.",
+    "tags": ["مکالمه", "آمریکن", "روزمره"]
+  },
+  {
+    "name": "Luke's English Podcast",
+    "host": "Luke Thompson",
+    "level": "advanced",
+    "accent": "British",
+    "url": "https://teacherluke.co.uk/",
+    "descriptionFa": "قسمت‌های بلند و پرجزئیات درباره زبان، فرهنگ، کمدی و زندگی در بریتانیا؛ گاهی با مهمان و تحلیل فیلم.",
+    "whyFa": "برای سطح پیشرفته و کسی که می‌خواهد به انگلیسی «فکر» کند. گوش دادن طولانی، تحمل شنیداری را واقعاً بالا می‌برد.",
+    "tags": ["پیشرفته", "بریتیش", "فرهنگ"]
+  },
+  {
+    "name": "TED Talks Daily",
+    "host": "TED",
+    "level": "advanced",
+    "accent": "Varied",
+    "url": "https://www.ted.com/podcasts",
+    "descriptionFa": "سخنرانی‌های کوتاه روزانه از سخنرانان سراسر دنیا با موضوع‌های علمی، اجتماعی و شخصی. متن سخنرانی‌ها هم روی TED هست.",
+    "whyFa": "تنوع لهجه و موضوع بالاست و برای تقویت دایره واژگان آکادمیک و شنیدن لهجه‌های غیرآمریکایی بی‌نظیر است.",
+    "tags": ["سخنرانی", "لهجه‌های متنوع", "آکادمیک"]
+  },
+  {
+    "name": "Culips ESL Podcast",
+    "host": "Culips",
+    "level": "intermediate",
+    "accent": "Canadian",
+    "url": "https://culips.com/",
+    "descriptionFa": "گفت‌وگوهای طبیعی با سرعت متوسط درباره زندگی روزمره، همراه با توضیح عبارت‌ها و نکات فرهنگی.",
+    "whyFa": "اگر می‌خواهی بین سطح متوسط و پیشرفته پل بزنی، سرعت و ساختار قسمت‌ها دقیقاً همین کار را می‌کند.",
+    "tags": ["کانادایی", "مکالمه", "فرهنگ"]
+  },
+  {
+    "name": "RealLife English",
+    "host": "RealLife English",
+    "level": "advanced",
+    "accent": "American",
+    "url": "https://reallifeglobal.com/",
+    "descriptionFa": "انگلیسی واقعی خیابان و سریال؛ اصطلاح‌ها، سرعت طبیعی و موضوع‌های سبک زندگی و سفر.",
+    "whyFa": "برای وقتی که کتاب‌ها تمام شده‌اند و می‌خواهی بفهمی مردم واقعاً چطور حرف می‌زنند.",
+    "tags": ["اسلنگ", "سریع", "طبیعی"]
+  },
+  {
+    "name": "English with Lucy",
+    "host": "Lucy Bella Earl",
+    "level": "intermediate",
+    "accent": "British",
+    "url": "https://www.youtube.com/@EnglishwithLucy",
+    "descriptionFa": "ویدیوهای آموزشی تلفظ، گرامر و واژگان با لهجه بریتانیایی و تصویر واضح از حرکت لب‌ها.",
+    "whyFa": "برای تلفظ، دیدن دهان گوینده کمک بزرگی است؛ چیزی که پادکست صوتی نمی‌تواند بدهد.",
+    "tags": ["ویدیو", "تلفظ", "بریتیش"]
+  },
+  {
+    "name": "Pronunciation with Emma",
+    "host": "Emma",
+    "level": "beginner",
+    "accent": "British",
+    "url": "https://www.youtube.com/@PronunciationwithEmma",
+    "descriptionFa": "درس‌های کوتاه تلفظ با تمرکز روی صداهای دشوار، اتصال کلمات و ریتم جمله.",
+    "whyFa": "اگر مشکلت «شنیده شدن» است نه فهمیدن، این کانال دقیقاً روی همان صداها تمرکز می‌کند.",
+    "tags": ["ویدیو", "تلفظ", "تمرین"]
+  }
+]

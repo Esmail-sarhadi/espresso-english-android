@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Espresso English</string>
+    <string name="app_tagline">Listen. Understand. Remember.</string>
+
+    <string name="notification_channel">پخش درس‌ها</string>
+    <string name="notification_channel_description">کنترل پخش درس‌ها از نوار وضعیت و صفحهٔ قفل</string>
+
+    <string name="play">پخش</string>
+    <string name="pause">توقف</string>
+    <string name="next">بعدی</string>
+    <string name="previous">قبلی</string>
+</resources>

@@ -1,0 +1,1904 @@
+{
+ "everyone": {
+  "fa": "همه، همه‌کس",
+  "pos": "pronoun",
+  "en": "every person",
+  "ipa": "/ˈɛv.ɹi.wʌn/"
+ },
+ "save": {
+  "fa": "پس‌انداز کردن، ذخیره کردن",
+  "pos": "verb",
+  "en": "to keep money for later; to rescue",
+  "ipa": "/seɪv/"
+ },
+ "money": {
+  "fa": "پول",
+  "pos": "noun",
+  "en": "coins and bills used to buy things",
+  "ipa": "/ˈmʌni/"
+ },
+ "talk": {
+  "fa": "حرف زدن",
+  "pos": "verb",
+  "en": "to speak to someone",
+  "ipa": "/toːk/"
+ },
+ "learn": {
+  "fa": "یاد گرفتن",
+  "pos": "verb",
+  "en": "to get knowledge or skill",
+  "ipa": "/lɜːn/"
+ },
+ "perfect": {
+  "fa": "بی‌نقص، عالی",
+  "pos": "adjective",
+  "en": "as good as possible",
+  "ipa": "/ˈpɜː.fɛkt/"
+ },
+ "common": {
+  "fa": "رایج، متداول",
+  "pos": "adjective",
+  "en": "happening often",
+  "ipa": "/ˈkɒmən/"
+ },
+ "price": {
+  "fa": "قیمت",
+  "pos": "noun",
+  "en": "the amount of money something costs",
+  "ipa": "/pɹaɪs/"
+ },
+ "discount": {
+  "fa": "تخفیف",
+  "pos": "noun",
+  "en": "a reduction in price",
+  "ipa": "/dɪsˈkaʊnt/"
+ },
+ "find": {
+  "fa": "پیدا کردن",
+  "pos": "verb",
+  "en": "to discover something",
+  "ipa": "/faɪnd/"
+ },
+ "already": {
+  "fa": "قبلاً، از قبل",
+  "pos": "adverb",
+  "en": "before now",
+  "ipa": "/ɑlˈɹɛdi/"
+ },
+ "gone": {
+  "fa": "رفته، تمام‌شده",
+  "pos": "adjective",
+  "en": "no longer there",
+  "ipa": "/ɡɔːn/"
+ },
+ "store": {
+  "fa": "فروشگاه",
+  "pos": "noun",
+  "en": "a shop",
+  "ipa": "/stɔː/"
+ },
+ "weekend": {
+  "fa": "آخر هفته",
+  "pos": "noun",
+  "en": "Saturday and Sunday",
+  "ipa": "/wiːˈkɛnd/"
+ },
+ "reduce": {
+  "fa": "کاهش دادن",
+  "pos": "verb",
+  "en": "to make something smaller or lower",
+  "ipa": "/ɹɪˈdjuːs/"
+ },
+ "winter": {
+  "fa": "زمستان",
+  "pos": "noun",
+  "en": "the coldest season",
+  "ipa": "/ˈwɪntɚ/"
+ },
+ "coat": {
+  "fa": "کت، پالتو",
+  "pos": "noun",
+  "en": "a warm piece of clothing worn outside",
+  "ipa": "/kəʊt/"
+ },
+ "exactly": {
+  "fa": "دقیقاً",
+  "pos": "adverb",
+  "en": "completely and precisely",
+  "ipa": "/ɪɡˈzæk(t)li/"
+ },
+ "jacket": {
+  "fa": "کاپشن، ژاکت",
+  "pos": "noun",
+  "en": "a short coat",
+  "ipa": "/ˈd͡ʒæk.ɪt/"
+ },
+ "normally": {
+  "fa": "معمولاً",
+  "pos": "adverb",
+  "en": "usually"
+ },
+ "cost": {
+  "fa": "قیمت داشتن، هزینه",
+  "pos": "verb",
+  "en": "to have a particular price",
+  "ipa": "/ˈkɑst/"
+ },
+ "agreement": {
+  "fa": "توافق، موافقت",
+  "pos": "noun",
+  "en": "the same opinion about something",
+  "example": "We came to an agreement.",
+  "ipa": "/əˈɡɹiːmənt/"
+ },
+ "offer": {
+  "fa": "پیشنهاد",
+  "pos": "noun",
+  "en": "something offered to you",
+  "ipa": "/ˈɑfɚ/"
+ },
+ "enough": {
+  "fa": "کافی",
+  "pos": "adverb",
+  "en": "as much as needed",
+  "ipa": "/iˈnʌf/"
+ },
+ "benefit": {
+  "fa": "فایده، مزیت",
+  "pos": "noun",
+  "en": "an advantage",
+  "ipa": "/ˈbɛn.ɪ.fɪt/"
+ },
+ "amount": {
+  "fa": "مقدار",
+  "pos": "noun",
+  "en": "how much of something there is",
+  "ipa": "/əˈmaʊnt/"
+ },
+ "pay": {
+  "fa": "پرداخت کردن",
+  "pos": "verb",
+  "en": "to give money for something",
+  "ipa": "/peɪ/"
+ },
+ "wear": {
+  "fa": "پوشیدن",
+  "pos": "verb",
+  "en": "to have clothes on your body",
+  "ipa": "/wɛə/"
+ },
+ "definitely": {
+  "fa": "قطعاً",
+  "pos": "adverb",
+  "en": "certainly",
+  "ipa": "/ˈdɛf.nɪt.li/"
+ },
+ "product": {
+  "fa": "محصول",
+  "pos": "noun",
+  "en": "something made to be sold",
+  "ipa": "/ˈpɹɒd.əkt/"
+ },
+ "expensive": {
+  "fa": "گران",
+  "pos": "adjective",
+  "en": "costing a lot of money",
+  "ipa": "/ɛkˈspɛnsɪv/"
+ },
+ "bigger": {
+  "fa": "بزرگ‌تر",
+  "pos": "adjective",
+  "en": "larger (comparative of big)",
+  "ipa": "/ˈbɪɡə/"
+ },
+ "spend": {
+  "fa": "خرج کردن",
+  "pos": "verb",
+  "en": "to use money to buy things",
+  "ipa": "/spɛnd/"
+ },
+ "sense": {
+  "fa": "منطق، حس",
+  "pos": "noun",
+  "en": "a reasonable meaning or logic",
+  "ipa": "/sɛn(t)s/"
+ },
+ "surprisingly": {
+  "fa": "به‌طور شگفت‌انگیز",
+  "pos": "adverb",
+  "en": "unexpectedly"
+ },
+ "dress": {
+  "fa": "پیراهن زنانه",
+  "pos": "noun",
+  "en": "a piece of clothing worn by women",
+  "ipa": "/dɹɛs/"
+ },
+ "similar": {
+  "fa": "شبیه، مشابه",
+  "pos": "adjective",
+  "en": "almost the same",
+  "example": "These words sound similar.",
+  "ipa": "/ˈsɪmələ/"
+ },
+ "extreme": {
+  "fa": "شدید، افراطی",
+  "pos": "adjective",
+  "en": "very great in degree",
+  "ipa": "/ɛkˈstɹiːm/"
+ },
+ "steal": {
+  "fa": "دزدیدن",
+  "pos": "verb",
+  "en": "to take something without permission",
+  "ipa": "/stiːl/"
+ },
+ "free": {
+  "fa": "مجانی، آزاد",
+  "pos": "adjective",
+  "en": "costing nothing",
+  "ipa": "/fɹiː/"
+ },
+ "boot": {
+  "fa": "چکمه",
+  "pos": "noun",
+  "en": "a shoe that covers the ankle",
+  "ipa": "/buːt/"
+ },
+ "compare": {
+  "fa": "مقایسه کردن",
+  "pos": "verb",
+  "en": "to look at differences between things",
+  "ipa": "/kəmˈpɛə/"
+ },
+ "several": {
+  "fa": "چندین",
+  "pos": "determiner",
+  "en": "more than two but not many",
+  "ipa": "/ˈsɛv(ə)ɹəl/"
+ },
+ "website": {
+  "fa": "وب‌سایت",
+  "pos": "noun",
+  "en": "a place on the internet",
+  "ipa": "/ˈwɛbˌsaɪt/"
+ },
+ "option": {
+  "fa": "گزینه",
+  "pos": "noun",
+  "en": "a choice",
+  "ipa": "/ˈɒpʃən/"
+ },
+ "decide": {
+  "fa": "تصمیم گرفتن",
+  "pos": "verb",
+  "en": "to choose after thinking",
+  "ipa": "/dɪˈsaɪd/"
+ },
+ "groceries": {
+  "fa": "خرید خوراکی",
+  "pos": "noun",
+  "en": "food bought from a shop",
+  "ipa": "/ˈɡɹəʊs(ə)ɹiz/"
+ },
+ "brand": {
+  "fa": "برند، مارک",
+  "pos": "noun",
+  "en": "a company's product name",
+  "ipa": "/bɹand/"
+ },
+ "feature": {
+  "fa": "ویژگی، امکانات",
+  "pos": "noun",
+  "en": "an important part of a product",
+  "ipa": "/ˈfiːtʃə/"
+ },
+ "quality": {
+  "fa": "کیفیت",
+  "pos": "noun",
+  "en": "how good something is",
+  "ipa": "/ˈkwɒlɪti/"
+ },
+ "large": {
+  "fa": "بزرگ",
+  "pos": "adjective",
+  "en": "big in size or amount",
+  "ipa": "/ˈlɑːd͡ʒ/"
+ },
+ "future": {
+  "fa": "آینده",
+  "pos": "noun",
+  "en": "the time that will come",
+  "ipa": "/ˈfjuːt͡ʃə/"
+ },
+ "favorite": {
+  "fa": "محبوب",
+  "pos": "adjective",
+  "en": "liked more than others",
+  "ipa": "/ˈfeɪv.ɹɪt/"
+ },
+ "bottle": {
+  "fa": "بطری",
+  "pos": "noun",
+  "en": "a container for liquid",
+  "ipa": "/ˈbɑ.təl/"
+ },
+ "regularly": {
+  "fa": "به‌طور منظم",
+  "pos": "adverb",
+  "en": "often and at fixed times",
+  "ipa": "/ˈɹɛɡjəli/"
+ },
+ "quickly": {
+  "fa": "سریع",
+  "pos": "adverb",
+  "en": "at high speed",
+  "ipa": "/ˈkwɪkli/"
+ },
+ "paper": {
+  "fa": "کاغذ",
+  "pos": "noun",
+  "en": "material used for writing",
+  "ipa": "/ˈpeɪpə/"
+ },
+ "digital": {
+  "fa": "دیجیتال",
+  "pos": "adjective",
+  "en": "electronic, using numbers",
+  "ipa": "/ˈdɪd͡ʒɪtəɫ/"
+ },
+ "code": {
+  "fa": "کد",
+  "pos": "noun",
+  "en": "a set of letters or numbers",
+  "ipa": "/kəʊd/"
+ },
+ "available": {
+  "fa": "موجود، در دسترس",
+  "pos": "adjective",
+  "en": "able to be used or bought",
+  "ipa": "/əˈveɪləb(ə)l/"
+ },
+ "purchase": {
+  "fa": "خریداری کردن",
+  "pos": "verb",
+  "en": "to buy something",
+  "ipa": "/ˈpɜːtʃəs/"
+ },
+ "anymore": {
+  "fa": "دیگر",
+  "pos": "adverb",
+  "en": "any longer",
+  "ipa": "/ˌæ.niˈmoːɹ/"
+ },
+ "act": {
+  "fa": "عمل کردن",
+  "pos": "verb",
+  "en": "to do something",
+  "ipa": "/æk/"
+ },
+ "physical": {
+  "fa": "فیزیکی، مادی",
+  "pos": "adjective",
+  "en": "relating to real objects",
+  "ipa": "/ˈfɪzɪkəl/"
+ },
+ "ticket": {
+  "fa": "بلیت",
+  "pos": "noun",
+  "en": "a paper that lets you enter an event",
+  "ipa": "/ˈtɪkɪt/"
+ },
+ "concert": {
+  "fa": "کنسرت",
+  "pos": "noun",
+  "en": "a live music performance",
+  "ipa": "/ˈkɒnsət/"
+ },
+ "useful": {
+  "fa": "مفید",
+  "pos": "adjective",
+  "en": "helpful",
+  "ipa": "/ˈjuːsfəl/"
+ },
+ "try": {
+  "fa": "امتحان کردن",
+  "pos": "verb",
+  "en": "to attempt to do something",
+  "ipa": "/tɹaɪ/"
+ },
+ "watch": {
+  "fa": "تماشا کردن",
+  "pos": "verb",
+  "en": "to look at something for a time",
+  "ipa": "/wɒt͡ʃ/"
+ },
+ "wonderful": {
+  "fa": "فوق‌العاده",
+  "pos": "adjective",
+  "en": "very good",
+  "ipa": "/ˈwʌn.də.fl/"
+ },
+ "question": {
+  "fa": "سؤال",
+  "pos": "noun",
+  "en": "something you ask",
+  "ipa": "/ˈkwɛstjən/"
+ },
+ "answer": {
+  "fa": "پاسخ دادن",
+  "pos": "verb",
+  "en": "to reply to a question",
+  "ipa": "/ˈan.sə/"
+ },
+ "explain": {
+  "fa": "توضیح دادن",
+  "pos": "verb",
+  "en": "to make something clear",
+  "example": "Let me explain.",
+  "ipa": "/ɛkˈspleɪn/"
+ },
+ "difference": {
+  "fa": "تفاوت",
+  "pos": "noun",
+  "en": "the way things are not the same",
+  "ipa": "/ˈdɪfəɹən(t)s/"
+ },
+ "understand": {
+  "fa": "فهمیدن",
+  "pos": "verb",
+  "en": "to know the meaning of something",
+  "ipa": "/ˌɞndəɹˈstand/"
+ },
+ "difficult": {
+  "fa": "دشوار",
+  "pos": "adjective",
+  "en": "not easy",
+  "ipa": "/ˈdɪfɪkəlt/"
+ },
+ "practice": {
+  "fa": "تمرین کردن",
+  "pos": "verb",
+  "en": "to do something repeatedly to improve",
+  "ipa": "/ˈpɹæktɪs/"
+ },
+ "listen": {
+  "fa": "گوش دادن",
+  "pos": "verb",
+  "en": "to pay attention to sound",
+  "ipa": "/ˈlɪs.ən/"
+ },
+ "repeat": {
+  "fa": "تکرار کردن",
+  "pos": "verb",
+  "en": "to say or do again"
+ },
+ "sentence": {
+  "fa": "جمله",
+  "pos": "noun",
+  "en": "a group of words that makes sense",
+  "ipa": "[ˈsɛntn̩t͡s]"
+ },
+ "word": {
+  "fa": "واژه، کلمه",
+  "pos": "noun",
+  "en": "a unit of language",
+  "ipa": "/wɜːd/"
+ },
+ "language": {
+  "fa": "زبان",
+  "pos": "noun",
+  "en": "a system of communication",
+  "ipa": "[ˈleɪŋɡwɪd͡ʒ]"
+ },
+ "teacher": {
+  "fa": "معلم",
+  "pos": "noun",
+  "en": "a person who teaches",
+  "ipa": "/ˈtiːt͡ʃə/"
+ },
+ "student": {
+  "fa": "دانشجو، دانش‌آموز",
+  "pos": "noun",
+  "en": "a person who studies",
+  "ipa": "/ˈstjuː.dənt/"
+ },
+ "lesson": {
+  "fa": "درس",
+  "pos": "noun",
+  "en": "a period of teaching",
+  "ipa": "/ˈlɛsn̩/"
+ },
+ "improve": {
+  "fa": "بهبود دادن",
+  "pos": "verb",
+  "en": "to make better",
+  "ipa": "/ɪmˈpɹuːv/"
+ },
+ "fluency": {
+  "fa": "روانی (در زبان)",
+  "pos": "noun",
+  "en": "the ability to speak easily",
+  "ipa": "/ˈfluːənsi/"
+ },
+ "course": {
+  "fa": "دوره‌ی آموزشی",
+  "pos": "noun",
+  "en": "a series of lessons",
+  "ipa": "/kɔːs/"
+ },
+ "download": {
+  "fa": "دانلود کردن",
+  "pos": "verb",
+  "en": "to copy a file from the internet",
+  "ipa": "/ˈdaʊnˌləʊd/"
+ },
+ "visit": {
+  "fa": "سر زدن، بازدید کردن",
+  "pos": "verb",
+  "en": "to go to see a place or person",
+  "ipa": "/ˈvɪzɪt/"
+ },
+ "click": {
+  "fa": "کلیک کردن",
+  "pos": "verb",
+  "en": "to press a button on a mouse",
+  "ipa": "/klɪk/"
+ },
+ "link": {
+  "fa": "پیوند، لینک",
+  "pos": "noun",
+  "en": "a connection you can click",
+  "ipa": "/lɪŋk/"
+ },
+ "email": {
+  "fa": "ایمیل",
+  "pos": "noun",
+  "en": "a message sent over the internet",
+  "ipa": "/ˈiːmeɪl/"
+ },
+ "receive": {
+  "fa": "دریافت کردن",
+  "pos": "verb",
+  "en": "to get something",
+  "ipa": "/ɹɪˈsiːv/"
+ },
+ "company": {
+  "fa": "شرکت",
+  "pos": "noun",
+  "en": "a business organization",
+  "ipa": "/ˈkʌmp(ə)ni/"
+ },
+ "hard": {
+  "fa": "سخت؛ سخت‌کوش",
+  "pos": "adjective",
+  "en": "difficult; with a lot of effort",
+  "ipa": "/hɑːd/"
+ },
+ "work": {
+  "fa": "کار کردن",
+  "pos": "verb",
+  "en": "to do a job",
+  "ipa": "/wɜːk/"
+ },
+ "people": {
+  "fa": "مردم",
+  "pos": "noun",
+  "en": "more than one person",
+  "ipa": "/ˈpiːpəl/"
+ },
+ "person": {
+  "fa": "شخص",
+  "pos": "noun",
+  "en": "a human being",
+  "ipa": "/ˈpɜːsən/"
+ },
+ "week": {
+  "fa": "هفته",
+  "pos": "noun",
+  "en": "seven days",
+  "ipa": "/wiːk/"
+ },
+ "month": {
+  "fa": "ماه",
+  "pos": "noun",
+  "en": "one of the twelve parts of a year",
+  "ipa": "/mʌnθ/"
+ },
+ "year": {
+  "fa": "سال",
+  "pos": "noun",
+  "en": "twelve months",
+  "ipa": "/jɪə/"
+ },
+ "today": {
+  "fa": "امروز",
+  "pos": "adverb",
+  "en": "on this day",
+  "ipa": "/təˈdeɪ/"
+ },
+ "tomorrow": {
+  "fa": "فردا",
+  "pos": "adverb",
+  "en": "on the day after today",
+  "ipa": "/təˈmɔɹoʊ/"
+ },
+ "always": {
+  "fa": "همیشه",
+  "pos": "adverb",
+  "en": "every time",
+  "ipa": "/ˈɔː(l).weɪz/"
+ },
+ "often": {
+  "fa": "اغلب",
+  "pos": "adverb",
+  "en": "many times",
+  "ipa": "/ˈɑf(t)ən/"
+ },
+ "usually": {
+  "fa": "معمولاً",
+  "pos": "adverb",
+  "en": "most of the time",
+  "ipa": "/ˈjuːʒju(ə)li/"
+ },
+ "never": {
+  "fa": "هرگز",
+  "pos": "adverb",
+  "en": "not at any time",
+  "ipa": "/ˈnɛv.ə(ɹ)/"
+ },
+ "sometimes": {
+  "fa": "گاهی",
+  "pos": "adverb",
+  "en": "on some occasions",
+  "ipa": "/ˈsʌmtaɪmz/"
+ },
+ "good-looking": {
+  "fa": "خوش‌قیافه، جذاب",
+  "pos": "adjective",
+  "en": "attractive; pleasant to look at",
+  "example": "Who's that good-looking guy over there?",
+  "ipa": "/ɡʊdˈlʊkɪŋ/"
+ },
+ "look closely": {
+  "fa": "دقیق نگاه کردن",
+  "pos": "phrase",
+  "en": "to examine something carefully",
+  "example": "Read it closely before you sign."
+ },
+ "examine": {
+  "fa": "بررسی کردن، وارسی کردن",
+  "pos": "verb",
+  "en": "to look at something carefully in order to learn about it",
+  "example": "Examine the condition of everything.",
+  "ipa": "/ɪɡˈzæmɪn/"
+ },
+ "condition": {
+  "fa": "وضعیت، حالت",
+  "pos": "noun",
+  "en": "the state that something is in",
+  "example": "The house is in good condition.",
+  "ipa": "/kənˈdɪʃən/"
+ },
+ "contract": {
+  "fa": "قرارداد",
+  "pos": "noun",
+  "en": "a legal written agreement",
+  "example": "Before signing a contract, read it closely.",
+  "ipa": "/ˈkɒntɹækt/"
+ },
+ "attractive": {
+  "fa": "جذاب، خوشقیافه",
+  "pos": "adjective",
+  "en": "good-looking or appealing",
+  "example": "He's a very attractive man.",
+  "ipa": "/əˈtɹæktɪv/"
+ },
+ "handsome": {
+  "fa": "خوش‌تیپ (برای مرد)",
+  "pos": "adjective",
+  "en": "good-looking, usually said about a man",
+  "example": "He's a handsome guy.",
+  "ipa": "/ˈhæn.səm/"
+ },
+ "in detail": {
+  "fa": "با جزئیات",
+  "pos": "phrase",
+  "en": "including all the small facts",
+  "example": "She explained the plan in detail."
+ },
+ "take a good look": {
+  "fa": "خوب نگاه کردن",
+  "pos": "phrase",
+  "en": "to look at something carefully",
+  "example": "Take a good look at the text."
+ },
+ "should": {
+  "fa": "باید (توصیه)",
+  "pos": "modal verb",
+  "en": "used to give advice or say what is a good idea",
+  "example": "If you feel sick, you should go to the doctor.",
+  "ipa": "/ʃʊd/"
+ },
+ "supposed to": {
+  "fa": "قرار است، باید (طبق قاعده)",
+  "pos": "phrase",
+  "en": "expected to do something because of a rule or arrangement",
+  "example": "Bicycles are supposed to be parked in this area."
+ },
+ "general advice": {
+  "fa": "توصیه‌ی کلی",
+  "pos": "phrase",
+  "en": "a suggestion that is true in most situations",
+  "example": "Should is used for general advice."
+ },
+ "rule": {
+  "fa": "قاعده",
+  "pos": "noun",
+  "en": "an instruction about what you must or must not do",
+  "example": "There's a rule about parking here.",
+  "ipa": "/ɹuːl/"
+ },
+ "expectation": {
+  "fa": "انتظار",
+  "pos": "noun",
+  "en": "a belief that something will happen",
+  "example": "There is an expectation that this happens.",
+  "ipa": "/ɛkspɛkˈteɪʃən/"
+ },
+ "follow a rule": {
+  "fa": "از قاعده پیروی کردن",
+  "pos": "phrase",
+  "en": "to obey a rule",
+  "example": "Not everyone follows the rule."
+ },
+ "sidewalk": {
+  "fa": "پیاده‌رو",
+  "pos": "noun",
+  "en": "the path beside a road for people to walk on",
+  "example": "People leave their bikes on the sidewalk.",
+  "ipa": "/ˈsaɪdwɔːk/"
+ },
+ "instead": {
+  "fa": "به‌جای آن",
+  "pos": "adverb",
+  "en": "in place of something else",
+  "example": "They leave them on the sidewalk instead.",
+  "ipa": "/ɪnˈstɛd/"
+ },
+ "park": {
+  "fa": "پارک کردن",
+  "pos": "verb",
+  "en": "to leave a vehicle in a place for a time",
+  "example": "Bicycles are supposed to be parked here.",
+  "ipa": "[paːk]"
+ },
+ "feel sick": {
+  "fa": "احساس بیماری کردن",
+  "pos": "phrase",
+  "en": "to feel ill",
+  "example": "If you feel sick, stay home."
+ },
+ "uncountable": {
+  "fa": "غیرقابل‌شمارش",
+  "pos": "adjective",
+  "en": "a noun that cannot be counted (water, information)",
+  "example": "Liquids are uncountable.",
+  "ipa": "/ʌnˈkaʊntəbəl/"
+ },
+ "countable": {
+  "fa": "قابل‌شمارش",
+  "pos": "adjective",
+  "en": "a noun that can be counted (one cup, two cups)",
+  "example": "Cups are countable, coffee is not.",
+  "ipa": "[ˈkʰaʊn(ɾ)əbɫ̩]"
+ },
+ "noun": {
+  "fa": "اسم",
+  "pos": "noun",
+  "en": "a word for a person, place or thing",
+  "example": "Coffee is an uncountable noun.",
+  "ipa": "/naʊn/"
+ },
+ "native speaker": {
+  "fa": "انگلیسی زبان بومی",
+  "pos": "noun",
+  "en": "someone who grew up speaking the language",
+  "example": "It sounds like a native speaker."
+ },
+ "short form": {
+  "fa": "شکل کوتاه‌شده",
+  "pos": "phrase",
+  "en": "a shorter way of saying something",
+  "example": "'A coffee' is a short form of 'a cup of coffee'."
+ },
+ "exception": {
+  "fa": "استثنا",
+  "pos": "noun",
+  "en": "a case that does not follow the rule",
+  "example": "This is a bit of an exception.",
+  "ipa": "/əkˈsɛpʃən/"
+ },
+ "strict": {
+  "fa": "سخت‌گیرانه",
+  "pos": "adjective",
+  "en": "following rules exactly",
+  "example": "Spoken English doesn't follow strict rules.",
+  "ipa": "/stɹɪkt/"
+ },
+ "spoken english": {
+  "fa": "انگلیسی محاوره‌ای",
+  "pos": "phrase",
+  "en": "the English people use when speaking",
+  "example": "Spoken English is more flexible."
+ },
+ "portion": {
+  "fa": "پرس، بخش",
+  "pos": "noun",
+  "en": "an amount of food or drink for one person",
+  "example": "We ordered a portion of fries.",
+  "ipa": "/ˈpoəɹʃən/"
+ },
+ "order": {
+  "fa": "سفارش دادن",
+  "pos": "verb",
+  "en": "to ask for food or drink in a restaurant",
+  "example": "Can I get a coffee?",
+  "ipa": "/ˈɔːdə/"
+ },
+ "go home": {
+  "fa": "به خانه رفتن",
+  "pos": "phrase",
+  "en": "to return to your house",
+  "example": "I'm going home now."
+ },
+ "go abroad": {
+  "fa": "به خارج رفتن",
+  "pos": "phrase",
+  "en": "to travel to another country",
+  "example": "She wants to go abroad next year."
+ },
+ "go overseas": {
+  "fa": "به آن‌سوی دریا رفتن، مهاجرت کردن",
+  "pos": "phrase",
+  "en": "to go to a country across the sea",
+  "example": "He went overseas for work."
+ },
+ "go downtown": {
+  "fa": "به مرکز شهر رفتن",
+  "pos": "phrase",
+  "en": "to go to the central part of a city",
+  "example": "Let's go downtown tonight."
+ },
+ "go upstairs": {
+  "fa": "به طبقه‌ی بالا رفتن",
+  "pos": "phrase",
+  "en": "to go up to a higher floor",
+  "example": "She went upstairs to sleep."
+ },
+ "expression": {
+  "fa": "عبارت",
+  "pos": "noun",
+  "en": "a group of words with a meaning",
+  "example": "This is a stronger expression.",
+  "ipa": "/ɪkˈspɹɛʃ.ən/"
+ },
+ "the correct way": {
+  "fa": "شکل درست",
+  "pos": "phrase",
+  "en": "the right way to say something",
+  "example": "The correct way is 'I'm going home'."
+ },
+ "that's the case": {
+  "fa": "وضعیت این‌طور است",
+  "pos": "phrase",
+  "en": "that is the situation",
+  "example": "I'm not sure why that's the case."
+ },
+ "actually": {
+  "fa": "در واقع",
+  "pos": "adverb",
+  "en": "used to add a surprising or true fact",
+  "example": "I'm not actually sure why.",
+  "ipa": "/-ɪ/"
+ },
+ "somewhere": {
+  "fa": "جایی",
+  "pos": "adverb",
+  "en": "in or to some place",
+  "example": "Let's go somewhere quiet.",
+  "ipa": "/ˈsʌm.hweːɹ/"
+ },
+ "look forward to": {
+  "fa": "مشتاقانه منتظر بودن",
+  "pos": "phrase",
+  "en": "to feel happy about something that will happen",
+  "example": "I'm looking forward to the weekend."
+ },
+ "can't wait": {
+  "fa": "طاقت نداشتن برای",
+  "pos": "phrase",
+  "en": "to be very excited about something coming soon",
+  "example": "I can't wait to see you."
+ },
+ "count down the days": {
+  "fa": "روزشماری کردن",
+  "pos": "idiom",
+  "en": "to wait excitedly, counting the time left",
+  "example": "I'm counting down the days until my birthday."
+ },
+ "eager to": {
+  "fa": "مشتاق به، علاقه‌مند به",
+  "pos": "phrase",
+  "en": "very interested in doing something",
+  "example": "I'm eager to start my new job."
+ },
+ "enthusiastic": {
+  "fa": "پرشور، با اشتیاق",
+  "pos": "adjective",
+  "en": "showing a lot of excitement",
+  "example": "That's a more enthusiastic expression.",
+  "ipa": "/ɪnˌθjuːzɪˈæstɪk/"
+ },
+ "vacation": {
+  "fa": "تعطیلات",
+  "pos": "noun",
+  "en": "time away from work or school",
+  "example": "We leave for vacation next week.",
+  "ipa": "/veɪˈkeɪʃ(ə)n/"
+ },
+ "formal": {
+  "fa": "رسمی",
+  "pos": "adjective",
+  "en": "used in serious or official situations",
+  "example": "This expression is a little more formal.",
+  "ipa": "/ˈfɔːməl/"
+ },
+ "event": {
+  "fa": "رویداد",
+  "pos": "noun",
+  "en": "something that happens, often planned",
+  "example": "A future event.",
+  "ipa": "/əˈvɛnt/"
+ },
+ "natural": {
+  "fa": "طبیعی",
+  "pos": "adjective",
+  "en": "sounding like a native speaker",
+  "example": "Here are four natural phrases.",
+  "ipa": "/ˈnætʃəɹəl/"
+ },
+ "go crazy": {
+  "fa": "دیوانه شدن از هیجان",
+  "pos": "collocation",
+  "en": "to become very excited or lose control",
+  "example": "My kids go crazy when they see ice cream."
+ },
+ "go bankrupt": {
+  "fa": "ورشکست شدن",
+  "pos": "collocation",
+  "en": "to run out of money and be unable to pay debts",
+  "example": "The business went bankrupt."
+ },
+ "go to waste": {
+  "fa": "هدر رفتن",
+  "pos": "collocation",
+  "en": "to not be used and therefore wasted",
+  "example": "Don't let the food go to waste."
+ },
+ "go downhill": {
+  "fa": "بدتر شدن، افت کردن",
+  "pos": "collocation",
+  "en": "to become worse over time",
+  "example": "His health went downhill."
+ },
+ "go bad": {
+  "fa": "فاسد شدن (غذا)",
+  "pos": "collocation",
+  "en": "to spoil, used about food",
+  "example": "The milk went bad."
+ },
+ "collocation": {
+  "fa": "هم‌نشینی واژه",
+  "pos": "noun",
+  "en": "words that are often used together",
+  "example": "Go crazy is a common collocation.",
+  "ipa": "/ˌkɒ.lə.ˈkeɪ.ʃən/"
+ },
+ "debt": {
+  "fa": "بدهی",
+  "pos": "noun",
+  "en": "money that you owe",
+  "example": "They can't pay their debts.",
+  "ipa": "/dɛt/"
+ },
+ "spoil": {
+  "fa": "فاسد شدن",
+  "pos": "verb",
+  "en": "to become bad, especially food",
+  "example": "Food spoils if you leave it out.",
+  "ipa": "/spɔɪl/"
+ },
+ "self-control": {
+  "fa": "خودکنترلی",
+  "pos": "noun",
+  "en": "the ability to control your emotions",
+  "example": "They lose self-control.",
+  "ipa": "/ˌsɛlf kənˈtɹəʊl/"
+ },
+ "client": {
+  "fa": "مشتری، ارباب‌رجوع",
+  "pos": "noun",
+  "en": "a person who pays for a service",
+  "example": "They lost several major clients.",
+  "ipa": "/ˈklʌɪənt/"
+ },
+ "smart": {
+  "fa": "باهوش، زرنگ",
+  "pos": "adjective",
+  "en": "intelligent; able to learn quickly",
+  "example": "She's a smart student.",
+  "ipa": "/smɑːt/"
+ },
+ "clever": {
+  "fa": "زرنگ، باهوش (با خلاقیت یا حیله)",
+  "pos": "adjective",
+  "en": "intelligent in a creative or tricky way",
+  "example": "That's a clever solution.",
+  "ipa": "/ˈklɛvɚ/"
+ },
+ "wise": {
+  "fa": "دانا، خردمند",
+  "pos": "adjective",
+  "en": "having good judgment based on experience",
+  "example": "She gave me wise advice.",
+  "ipa": "/waɪz/"
+ },
+ "intelligent": {
+  "fa": "هوشمند",
+  "pos": "adjective",
+  "en": "able to understand and learn well",
+  "example": "Smart simply means intelligent.",
+  "ipa": "/ɪnˈtɛlɪd͡ʒənt/"
+ },
+ "judgment": {
+  "fa": "قضاوت",
+  "pos": "noun",
+  "en": "the ability to make good decisions",
+  "example": "A wise person has good judgment.",
+  "ipa": "/ˈdʒʌdʒ.mənt/"
+ },
+ "distinguish": {
+  "fa": "تمایز دادن، تشخیص دادن",
+  "pos": "verb",
+  "en": "to see the difference between two things",
+  "example": "They distinguish right from wrong.",
+  "ipa": "/dɪsˈtɪŋɡwɪʃ/"
+ },
+ "connotation": {
+  "fa": "بار معنایی، حس ضمنی",
+  "pos": "noun",
+  "en": "an extra feeling or idea connected to a word",
+  "example": "The word has a negative connotation.",
+  "ipa": "/ˌkɒnəˈteɪʃən/"
+ },
+ "creative": {
+  "fa": "خلاق",
+  "pos": "adjective",
+  "en": "good at making new ideas",
+  "example": "A clever solution is creative.",
+  "ipa": "/kɹiˈeɪtɪv/"
+ },
+ "purpose": {
+  "fa": "هدف",
+  "pos": "noun",
+  "en": "the reason for doing something",
+  "example": "Using intelligence for bad purposes.",
+  "ipa": "/ˈpɜːpəs/"
+ },
+ "experience": {
+  "fa": "تجربه",
+  "pos": "noun",
+  "en": "knowledge from doing things",
+  "example": "Wisdom comes from life experience.",
+  "ipa": "/ɪkˈspɪə.ɹɪəns/"
+ },
+ "take for granted": {
+  "fa": "بدیهی گرفتن، قدر ندانستن",
+  "pos": "idiom",
+  "en": "to not appreciate the real value of someone or something",
+  "example": "We take our health for granted."
+ },
+ "appreciate": {
+  "fa": "قدر دانستن",
+  "pos": "verb",
+  "en": "to recognize the value of something",
+  "example": "They don't appreciate her work.",
+  "ipa": "/əˈpɹiː.si.eɪt/"
+ },
+ "value": {
+  "fa": "ارزش",
+  "pos": "noun",
+  "en": "the importance or worth of something",
+  "example": "Her work is very valuable.",
+  "ipa": "/ˈvæljuː/"
+ },
+ "recognize": {
+  "fa": "به رسمیت شناختن، تشخیص دادن",
+  "pos": "verb",
+  "en": "to accept or notice that something is true",
+  "example": "They don't recognize her hard work.",
+  "ipa": "/ˈɹɛkənaɪz/"
+ },
+ "accustomed to": {
+  "fa": "عادت‌کرده به",
+  "pos": "phrase",
+  "en": "familiar with something because you experience it often",
+  "example": "We are accustomed to it."
+ },
+ "realize": {
+  "fa": "پی بردن، متوجه شدن",
+  "pos": "verb",
+  "en": "to become aware of something",
+  "example": "You only realize it when it's gone.",
+  "ipa": "/ˈɹɪə.laɪz/"
+ },
+ "valuable": {
+  "fa": "ارزشمند",
+  "pos": "adjective",
+  "en": "worth a lot",
+  "example": "Her work is very valuable to the company.",
+  "ipa": "/ˈvæljuəbl̩/"
+ },
+ "secretary": {
+  "fa": "منشی",
+  "pos": "noun",
+  "en": "a person who does office work for others",
+  "example": "The company has a hard-working secretary.",
+  "ipa": "/ˈsɛk.ɹə.tɹi/"
+ },
+ "employee": {
+  "fa": "کارمند",
+  "pos": "noun",
+  "en": "someone who works for a company",
+  "example": "The other employees don't appreciate her.",
+  "ipa": "/(ˌ)ɪm-/"
+ },
+ "go away": {
+  "fa": "از بین رفتن، رفتن",
+  "pos": "phrase",
+  "en": "to disappear or leave",
+  "example": "When that person goes away, you notice."
+ },
+ "pronounce": {
+  "fa": "تلفظ کردن",
+  "pos": "verb",
+  "en": "to make the sound of a word",
+  "example": "How do you pronounce this word?",
+  "ipa": "/pɹəˈnaʊns/"
+ },
+ "tongue": {
+  "fa": "زبان (عضو دهان)",
+  "pos": "noun",
+  "en": "the soft part inside your mouth",
+  "example": "Touch your tongue to your teeth.",
+  "ipa": "/tʌŋ/"
+ },
+ "interrupt": {
+  "fa": "قطع کردن",
+  "pos": "verb",
+  "en": "to stop something for a moment",
+  "example": "Interrupt the S sound with a tiny T.",
+  "ipa": "/ˌɪntəˈɹʌpt/"
+ },
+ "hint": {
+  "fa": "اشاره، نشانه‌ی کوچک",
+  "pos": "noun",
+  "en": "a very small amount that you can notice",
+  "example": "You only hear a hint of the T.",
+  "ipa": "/hɪnt/"
+ },
+ "consonant": {
+  "fa": "صامت (حرف بی‌صدا)",
+  "pos": "noun",
+  "en": "a letter like b, c, d that is not a vowel",
+  "example": "STS is a consonant cluster.",
+  "ipa": "/ˈkɒn.sə.nənt/"
+ },
+ "difficulty": {
+  "fa": "دشواری، مشکل",
+  "pos": "noun",
+  "en": "the state of finding something hard",
+  "example": "She has difficulty with STS.",
+  "ipa": "/ˈdɪfɪkəlti/"
+ },
+ "discovery": {
+  "fa": "کشف",
+  "pos": "noun",
+  "en": "finding something for the first time",
+  "example": "The scientists made a discovery.",
+  "ipa": "/dɪsˈkʌvəɹi/"
+ },
+ "guest": {
+  "fa": "مهمان",
+  "pos": "noun",
+  "en": "a person invited to a place",
+  "example": "We were guests at this hotel.",
+  "ipa": "/ɡɛst/"
+ },
+ "wrist": {
+  "fa": "مچ دست",
+  "pos": "noun",
+  "en": "the joint between your hand and arm",
+  "example": "My wrists hurt.",
+  "ipa": "/ɹɪst/"
+ },
+ "trust": {
+  "fa": "اعتماد کردن",
+  "pos": "verb",
+  "en": "to believe someone is honest",
+  "example": "He trusts you.",
+  "ipa": "/trʊst/"
+ },
+ "on sale": {
+  "fa": "حراج، با قیمت پایین‌تر",
+  "pos": "phrase",
+  "en": "being offered at a lower price than usual",
+  "example": "Everything in the store is on sale."
+ },
+ "marked down": {
+  "fa": "قیمت‌کاهش‌یافته",
+  "pos": "phrase",
+  "en": "the price has been lowered",
+  "example": "All the winter coats have been marked down."
+ },
+ "for sale": {
+  "fa": "برای فروش",
+  "pos": "phrase",
+  "en": "available to buy at the normal price",
+  "example": "The house is for sale."
+ },
+ "a great deal": {
+  "fa": "معامله‌ی عالی",
+  "pos": "phrase",
+  "en": "something bought for a very good price",
+  "example": "Wow, that's a great deal."
+ },
+ "get your money's worth": {
+  "fa": "ارزش پولت را گرفتن",
+  "pos": "idiom",
+  "en": "to get enough value for the money you paid",
+  "example": "I got my money's worth from this coat."
+ },
+ "a bargain": {
+  "fa": "خرید ارزان و به‌صرفه",
+  "pos": "noun",
+  "en": "something bought for a surprisingly low price",
+  "example": "It was a real bargain."
+ },
+ "a steal": {
+  "fa": "خیلی ارزان، مفت",
+  "pos": "noun",
+  "en": "something priced so low it feels like stealing",
+  "example": "These boots were a steal."
+ },
+ "shop around": {
+  "fa": "قیمت‌گیری کردن",
+  "pos": "phrase",
+  "en": "to compare prices in different places",
+  "example": "I like to shop around before buying."
+ },
+ "stock up on": {
+  "fa": "انبار کردن، ذخیره کردن",
+  "pos": "phrase",
+  "en": "to buy a large amount for future use",
+  "example": "We stock up on shampoo when it's on sale."
+ },
+ "coupon": {
+  "fa": "کوپن تخفیف",
+  "pos": "noun",
+  "en": "a paper or code that gives a lower price",
+  "example": "Here's a coupon for 10% off.",
+  "ipa": "/ˈkuːˌpɒn/"
+ },
+ "sold out": {
+  "fa": "تمام‌شده، ناموجود",
+  "pos": "phrase",
+  "en": "all items have been bought, none left",
+  "example": "Sorry, this product is sold out."
+ },
+ "while supplies last": {
+  "fa": "تا اتمام موجودی",
+  "pos": "phrase",
+  "en": "only until the store runs out of the product",
+  "example": "Get it while supplies last."
+ },
+ "at the end": {
+  "fa": "در انتها، در آخر (قسمت نهایی چیزی)",
+  "pos": "phrase",
+  "en": "in the final part or position of something",
+  "example": "There was a surprise at the end of the book."
+ },
+ "in the end": {
+  "fa": "در نهایت، بالاخره",
+  "pos": "phrase",
+  "en": "finally, after everything is considered",
+  "example": "In the end, we agreed."
+ },
+ "literal": {
+  "fa": "تحتاللفظی، دقیق",
+  "pos": "adjective",
+  "en": "using the exact original meaning of words",
+  "example": "This is the literal meaning."
+ },
+ "metaphorical": {
+  "fa": "استعاری، مجازی",
+  "pos": "adjective",
+  "en": "using words imaginatively, not literally",
+  "example": "The phrase has a metaphorical meaning."
+ },
+ "argue": {
+  "fa": "بحث کردن، استدلال کردن",
+  "pos": "verb",
+  "en": "to express different opinions, often angrily",
+  "example": "We argued about the plan."
+ },
+ "recommend": {
+  "fa": "پیشنهاد کردن، توصیه کردن",
+  "pos": "verb",
+  "en": "to say that something is good or suitable",
+  "example": "I wouldn't recommend this book."
+ },
+ "final": {
+  "fa": "نهایی، آخرین",
+  "pos": "adjective",
+  "en": "coming at the end",
+  "example": "This is the final part."
+ },
+ "consider": {
+  "fa": "در نظر گرفتن، بررسی کردن",
+  "pos": "verb",
+  "en": "to think about something carefully",
+  "example": "Consider all the facts."
+ },
+ "out of money": {
+  "fa": "بیپول، پولش تمامشده",
+  "pos": "phrase",
+  "en": "having no money left",
+  "example": "I'm out of money this month."
+ },
+ "gorgeous": {
+  "fa": "بسیار زیبا، خیرهکننده",
+  "pos": "adjective",
+  "en": "extremely beautiful",
+  "example": "She looked gorgeous in her wedding dress."
+ },
+ "stunning": {
+  "fa": "خیرهکننده، شگفتانگیززیبا",
+  "pos": "adjective",
+  "en": "so beautiful that it impresses or surprises you",
+  "example": "The view was stunning."
+ },
+ "lovely": {
+  "fa": "دلپذیر، دلنشین",
+  "pos": "adjective",
+  "en": "pleasant, enjoyable, nice to look at",
+  "example": "They have a lovely little house."
+ },
+ "charming": {
+  "fa": "دلنشین، جذاب و دوستداشتنی",
+  "pos": "adjective",
+  "en": "attractive in a warm, friendly, or old-fashioned way",
+  "example": "It's a charming village."
+ },
+ "wedding dress": {
+  "fa": "لباس عروس",
+  "pos": "noun",
+  "en": "the dress a woman wears at her wedding",
+  "example": "Her wedding dress was beautiful."
+ },
+ "narrow": {
+  "fa": "باریک، تنگ",
+  "pos": "adjective",
+  "en": "small in width",
+  "example": "The village has narrow streets."
+ },
+ "old-fashioned": {
+  "fa": "سنتی، قدیمی",
+  "pos": "adjective",
+  "en": "typical of an earlier time",
+  "example": "It has an old-fashioned charm."
+ },
+ "appeal": {
+  "fa": "جذابیت داشتن، پسندیدن",
+  "pos": "verb",
+  "en": "to be attractive or interesting",
+  "example": "The idea appeals to me."
+ },
+ "impress": {
+  "fa": "تحت تأثیر قرار دادن",
+  "pos": "verb",
+  "en": "to make someone admire something",
+  "example": "The view impressed everyone."
+ },
+ "little": {
+  "fa": "تقریباً هیچ، خیلی کم (منفی)",
+  "pos": "determiner",
+  "en": "almost none; used with uncountable nouns",
+  "example": "I have little time today."
+ },
+ "a little": {
+  "fa": "کمی، مقدار کمی (مثبت)",
+  "pos": "phrase",
+  "en": "some; used with uncountable nouns",
+  "example": "I have a little time after lunch."
+ },
+ "few": {
+  "fa": "تقریباً هیچ، خیلی کم (منفی)",
+  "pos": "determiner",
+  "en": "almost none; used with countable nouns",
+  "example": "Few students passed."
+ },
+ "a few": {
+  "fa": "چندتا، تعداد کمی (مثبت)",
+  "pos": "phrase",
+  "en": "some; used with countable nouns",
+  "example": "I have a few books."
+ },
+ "uncountable noun": {
+  "fa": "اسم شمارشناپذیر",
+  "pos": "noun",
+  "en": "a noun that cannot be counted, like water or time",
+  "example": "Money is an uncountable noun."
+ },
+ "countable noun": {
+  "fa": "اسم شمارشپذیر",
+  "pos": "noun",
+  "en": "a noun that can be counted, like book or student",
+  "example": "Book is a countable noun."
+ },
+ "patience": {
+  "fa": "صبر، حوصله",
+  "pos": "noun",
+  "en": "the ability to wait calmly",
+  "example": "I have little patience today."
+ },
+ "borrow": {
+  "fa": "قرض گرفتن",
+  "pos": "verb",
+  "en": "to take something from someone and return it later",
+  "example": "Can I borrow a book?"
+ },
+ "meeting": {
+  "fa": "جلسه",
+  "pos": "noun",
+  "en": "a planned discussion between people",
+  "example": "We had a short meeting."
+ },
+ "speak volumes": {
+  "fa": "گویای چیزهای زیادی بودن، حرف زیادی داشتند",
+  "pos": "phrase",
+  "en": "to reveal a lot of information without words",
+  "example": "His silence spoke volumes."
+ },
+ "reveal": {
+  "fa": "آشکار کردن، فاش کردن",
+  "pos": "verb",
+  "en": "to make something known",
+  "example": "The photo revealed the truth."
+ },
+ "donate": {
+  "fa": "اهداء کردن، بخشیدن",
+  "pos": "verb",
+  "en": "to give money or things to help someone",
+  "example": "She donated a lot of money."
+ },
+ "charity": {
+  "fa": "خیریه",
+  "pos": "noun",
+  "en": "an organization that helps people in need",
+  "example": "He gives to charity."
+ },
+ "character": {
+  "fa": "شخصیت، خصلت",
+  "pos": "noun",
+  "en": "the qualities that make a person who they are",
+  "example": "It says a lot about his character."
+ },
+ "generous": {
+  "fa": "سخاوتمند، بخشنده",
+  "pos": "adjective",
+  "en": "willing to give a lot",
+  "example": "They are very generous."
+ },
+ "invest": {
+  "fa": "سرمایهگذاری کردن",
+  "pos": "verb",
+  "en": "to put money into something to improve it",
+  "example": "The government didn't invest in education."
+ },
+ "resource": {
+  "fa": "منبع، امکانات",
+  "pos": "noun",
+  "en": "something available that can be used",
+  "example": "We need more resources."
+ },
+ "priority": {
+  "fa": "اولویت",
+  "pos": "noun",
+  "en": "the thing considered most important",
+  "example": "Education is a priority."
+ },
+ "facial expression": {
+  "fa": "حالت چهره",
+  "pos": "noun",
+  "en": "the look on someone's face that shows feeling",
+  "example": "Her facial expression said everything."
+ },
+ "disgusted": {
+  "fa": "منزجرشده، با حالت انزجار",
+  "pos": "adjective",
+  "en": "feeling strong dislike",
+  "example": "He had a disgusted look."
+ },
+ "end a conversation": {
+  "fa": "پایان دادن به گفتوگو",
+  "pos": "phrase",
+  "en": "to finish talking to someone",
+  "example": "How do you end a conversation politely?"
+ },
+ "get going": {
+  "fa": "راه افتادن، رفتن",
+  "pos": "phrase",
+  "en": "to leave or start going somewhere",
+  "example": "I should get going."
+ },
+ "pick up": {
+  "fa": "برداشتن، تحویل گرفتن",
+  "pos": "verb",
+  "en": "to collect someone or something",
+  "example": "I have to pick up my kids."
+ },
+ "politely": {
+  "fa": "مؤدبانه",
+  "pos": "adverb",
+  "en": "in a polite way",
+  "example": "She politely ended the call."
+ },
+ "signal": {
+  "fa": "اشاره کردن، نشان دادن",
+  "pos": "verb",
+  "en": "to show something indirectly",
+  "example": "This signals that you need to leave."
+ },
+ "catch up": {
+  "fa": "گپ زدن، صحبت دربارهٔ اتفاقات اخیر",
+  "pos": "phrase",
+  "en": "to talk with someone you haven't seen for a while",
+  "example": "It was great catching up."
+ },
+ "professional": {
+  "fa": "کاری، حرفهای",
+  "pos": "adjective",
+  "en": "related to work",
+  "example": "It works in professional conversations."
+ },
+ "fluently": {
+  "fa": "روان",
+  "pos": "adverb",
+  "en": "in a smooth and natural way",
+  "example": "I want to speak fluently."
+ },
+ "confidently": {
+  "fa": "بااعتمادبهنفس",
+  "pos": "adverb",
+  "en": "in a way that shows confidence",
+  "example": "She spoke confidently."
+ },
+ "rising star": {
+  "fa": "ستارهٔ در حال طلوع",
+  "pos": "noun",
+  "en": "someone becoming successful or popular quickly",
+  "example": "She's a rising star."
+ },
+ "hit it out of the park": {
+  "fa": "عالی کار کردن، خیلی خوب انجام دادن",
+  "pos": "idiom",
+  "en": "to do something extremely well",
+  "example": "You hit it out of the park."
+ },
+ "come out on top": {
+  "fa": "پیروز بیرون آمدن، برنده شدن",
+  "pos": "idiom",
+  "en": "to be the winner in the end",
+  "example": "Our team came out on top."
+ },
+ "strike gold": {
+  "fa": "به موفقیت بزرگ رسیدن",
+  "pos": "idiom",
+  "en": "to unexpectedly achieve great success",
+  "example": "The company struck gold."
+ },
+ "tough competition": {
+  "fa": "رقابت سخت",
+  "pos": "noun",
+  "en": "a difficult competition",
+  "example": "We faced tough competition."
+ },
+ "presentation": {
+  "fa": "ارائه",
+  "pos": "noun",
+  "en": "a talk to show information",
+  "example": "The presentation went well."
+ },
+ "industry": {
+  "fa": "صنعت، حوزه",
+  "pos": "noun",
+  "en": "a particular area of business",
+  "example": "the fashion industry"
+ },
+ "unexpectedly": {
+  "fa": "بهطور غیرمنتظره",
+  "pos": "adverb",
+  "en": "in a way that was not expected",
+  "example": "He succeeded unexpectedly."
+ },
+ "level up": {
+  "fa": "ارتقا دادن، بالا بردن سطح",
+  "pos": "phrase",
+  "en": "to improve to a higher level",
+  "example": "Idioms level up your English."
+ },
+ "overwhelmed": {
+  "fa": "غرقهشده، تحت فشار و سردرگم",
+  "pos": "adjective",
+  "en": "feeling you have too much to deal with",
+  "example": "I was overwhelmed by the workload."
+ },
+ "reassure": {
+  "fa": "اطمینان دادن، آرام کردن",
+  "pos": "verb",
+  "en": "to make someone feel less worried",
+  "example": "She reassured me."
+ },
+ "get the hang of": {
+  "fa": "به آن مسلط شدن، یاد گرفتن",
+  "pos": "phrase",
+  "en": "to become comfortable or skilled at something",
+  "example": "I got the hang of it."
+ },
+ "intimidating": {
+  "fa": "ترسناک، هراسانکننده",
+  "pos": "adjective",
+  "en": "making you feel nervous because it seems difficult",
+  "example": "Public speaking can be intimidating."
+ },
+ "coworker": {
+  "fa": "همکار",
+  "pos": "noun",
+  "en": "a person you work with",
+  "example": "My coworkers are helpful."
+ },
+ "routine": {
+  "fa": "روال، کار روزانه",
+  "pos": "noun",
+  "en": "the usual order of daily activities",
+  "example": "It became part of my routine."
+ },
+ "logistics": {
+  "fa": "هماهنگیها و جزئیات اجرایی",
+  "pos": "noun",
+  "en": "the detailed organization of an activity",
+  "example": "Moving has a lot of logistics."
+ },
+ "isolated words": {
+  "fa": "واژههای جدا از بافت",
+  "pos": "phrase",
+  "en": "words learned separately, not in context",
+  "example": "Isolated words are hard to remember."
+ },
+ "look back": {
+  "fa": "به گذشته نگاه کردن",
+  "pos": "phrase",
+  "en": "to think about the past",
+  "example": "Looking back, it was easy."
+ },
+ "daily": {
+  "fa": "روزانه",
+  "pos": "adjective",
+  "en": "happening every day",
+  "example": "daily routine"
+ },
+ "explain something to someone": {
+  "fa": "چیزی را برای کسی توضیح دادن",
+  "pos": "phrase",
+  "en": "the correct pattern with a person",
+  "example": "I explained the rules to him."
+ },
+ "explain that": {
+  "fa": "توضیح دادن که...",
+  "pos": "phrase",
+  "en": "used before a clause",
+  "example": "She explained that she was busy."
+ },
+ "rules": {
+  "fa": "قواعد، قوانین",
+  "pos": "noun",
+  "en": "instructions about what is allowed",
+  "example": "I'll explain the rules."
+ },
+ "process": {
+  "fa": "روند، فرایند",
+  "pos": "noun",
+  "en": "a series of steps to do something",
+  "example": "Let me explain the process."
+ },
+ "cancel": {
+  "fa": "لغو کردن",
+  "pos": "verb",
+  "en": "to stop a planned event",
+  "example": "The meeting was canceled."
+ },
+ "running late": {
+  "fa": "دیر شدن، تأخیر داشتن",
+  "pos": "phrase",
+  "en": "being later than planned",
+  "example": "I'm running late."
+ },
+ "focus": {
+  "fa": "تمرکز، نقطهٔ توجه",
+  "pos": "noun",
+  "en": "the main subject or attention",
+  "example": "The focus is on the facts."
+ },
+ "native language": {
+  "fa": "زبان مادری",
+  "pos": "noun",
+  "en": "the language you learned first",
+  "example": "This is common in my native language."
+ },
+ "avoid": {
+  "fa": "جلوگیری کردن، پرهیز کردن",
+  "pos": "verb",
+  "en": "to keep away from something",
+  "example": "Avoid this mistake."
+ },
+ "mix up": {
+  "fa": "اشتباه گرفتن، جابهجا کردن",
+  "pos": "phrasal verb",
+  "en": "to confuse one thing or person with another",
+  "example": "I mixed up their names."
+ },
+ "mess up": {
+  "fa": "خراب کردن، بد انجام دادن",
+  "pos": "phrasal verb",
+  "en": "to make a mistake or do something badly",
+  "example": "I messed up the presentation."
+ },
+ "confuse": {
+  "fa": "اشتباه گرفتن، گیج کردن",
+  "pos": "verb",
+  "en": "to mistake one thing for another",
+  "example": "I confuse those words."
+ },
+ "phrasal verb": {
+  "fa": "فعل عبارتی",
+  "pos": "noun",
+  "en": "a verb made of a verb plus a particle",
+  "example": "Mix up is a phrasal verb."
+ },
+ "slide": {
+  "fa": "اسلاید",
+  "pos": "noun",
+  "en": "a page in a presentation",
+  "example": "I deleted a slide."
+ },
+ "in context": {
+  "fa": "در بافت، داخل متن",
+  "pos": "phrase",
+  "en": "inside a real situation or text",
+  "example": "Learn words in context."
+ },
+ "completely": {
+  "fa": "کاملاً",
+  "pos": "adverb",
+  "en": "totally",
+  "example": "They are completely different."
+ },
+ "mistake": {
+  "fa": "اشتباه",
+  "pos": "noun",
+  "en": "something done wrongly",
+  "example": "Mistakes help us learn."
+ },
+ "afraid": {
+  "fa": "ترسیده، هراسان",
+  "pos": "adjective",
+  "en": "feeling fear",
+  "example": "I'm afraid of spiders."
+ },
+ "scared": {
+  "fa": "ترسیده، وحشتزده",
+  "pos": "adjective",
+  "en": "feeling fear",
+  "example": "I'm scared of heights."
+ },
+ "scary": {
+  "fa": "ترسناک (برای توصیف چیزی)",
+  "pos": "adjective",
+  "en": "causing fear",
+  "example": "That movie is scary."
+ },
+ "frightening": {
+  "fa": "هراسانکننده",
+  "pos": "adjective",
+  "en": "causing fear",
+  "example": "It's a frightening movie."
+ },
+ "be afraid of": {
+  "fa": "از چیزی ترسیدن",
+  "pos": "phrase",
+  "en": "to fear a thing or activity",
+  "example": "I'm afraid of dogs."
+ },
+ "be scared to do": {
+  "fa": "از انجام کاری ترسیدن",
+  "pos": "phrase",
+  "en": "to fear doing something in the future",
+  "example": "I'm scared to ask her out."
+ },
+ "ask someone out": {
+  "fa": "کسی را به قرار دعوت کردن",
+  "pos": "phrase",
+  "en": "to invite someone on a romantic date",
+  "example": "He asked her out."
+ },
+ "heights": {
+  "fa": "بلندی، ارتفاع",
+  "pos": "noun",
+  "en": "a high place",
+  "example": "I'm scared of heights."
+ },
+ "delay": {
+  "fa": "تأخیر",
+  "pos": "noun",
+  "en": "a situation where something is late",
+  "example": "There was a delay."
+ },
+ "diplomatic": {
+  "fa": "مؤدبانه و بااحتیاط",
+  "pos": "adjective",
+  "en": "careful not to offend",
+  "example": "It's a diplomatic answer."
+ },
+ "regret": {
+  "fa": "متأسف بودن، پشیمانی",
+  "pos": "verb",
+  "en": "to feel sorry about something",
+  "example": "I regret the delay."
+ },
+ "directions": {
+  "fa": "آدرس، مسیریابی",
+  "pos": "noun",
+  "en": "instructions telling how to get somewhere",
+  "example": "He asked for directions."
+ },
+ "optional": {
+  "fa": "اختیاری",
+  "pos": "adjective",
+  "en": "not required",
+  "example": "The word 'that' is optional."
+ },
+ "preposition": {
+  "fa": "حرف اضافه",
+  "pos": "noun",
+  "en": "a word like of, to, in, or on",
+  "example": "'Of' is a preposition."
+ },
+ "whole phrases": {
+  "fa": "عبارتهای کامل",
+  "pos": "phrase",
+  "en": "complete expressions rather than single words",
+  "example": "Learn whole phrases."
+ }
+}

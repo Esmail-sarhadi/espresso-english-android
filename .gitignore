@@ -1,23 +1,34 @@
-# Build output
+# ---- Signing material: never commit ----
+*.jks
+*.keystore
+local.properties
+android-app/local.properties
+
+# ---- Android build output ----
 android-app/build/
 android-app/app/build/
 android-app/.gradle/
-android-app/local.properties
 .gradle/
 *.iml
 .idea/
 
-# Node (web studio)
+# ---- Web / Capacitor ----
 espresso-english/node_modules/
 espresso-english/dist/
 node_modules/
+espresso-english/ios/App/App/public/
+espresso-english/ios/App/App/capacitor.config.json
+espresso-english/ios/App/build/
+espresso-english/ios/App/App.xcodeproj/xcuserdata/
+espresso-english/ios/App/App.xcodeproj/project.xcworkspace/xcuserdata/
+espresso-english/ios/App/Podfile.lock
 
-# Release binaries — ship these as GitHub Release assets, not in git
+# ---- Release binaries ship as GitHub Release assets, not in git ----
 *.apk
 *.aab
-!github/releases/*.apk
+*.ipa
 
-# OS / editor noise
+# ---- OS / editor noise ----
 .DS_Store
 Thumbs.db
 *.log
