@@ -58,57 +58,6 @@ jobs:
           path: espresso-english/ios/App/build/Build/Products/Release-iphonesimulator/Espresso-English-simulator.zip
           retention-days: 14
 
-  device:
-    name: Build signed .ipa (optional)
-    runs-on: macos-15
-    # Only runs when the four signing secrets exist in the repository settings.
-    if: ${{ secrets.IOS_CERTIFICATE_BASE64 != '' }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: espresso-english/package-lock.json
-
-      - name: Install and build the web bundle
-        working-directory: espresso-english
-        run: |
-          npm ci
-          npm run build
-          npx cap sync ios
-
-      - name: Import the signing certificate
-        env:
-          CERT_P12: ${{ secrets.IOS_CERTIFICATE_BASE64 }}
-          CERT_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
-          PROFILE: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}
-          KEYCHAIN_PASSWORD: ${{ secrets.IOS_KEYCHAIN_PASSWORD }}
-        run: |
-          echo "$CERT_P12" | base64 --decode > certificate.p12
-          echo "$PROFILE" | base64 --decode > profile.mobileprovision
-          security create-keychain -p "$KEYCHAIN_PASSWORD" build.keychain
-          security default-keychain -s build.keychain
-          security unlock-keychain -p "$KEYCHAIN_PASSWORD" build.keychain
-          security import certificate.p12 -k build.keychain -P "$CERT_PASSWORD" -T /usr/bin/codesign
-          security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" build.keychain
-          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-          cp profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
-
-      - name: Archive and export
-        working-directory: espresso-english/ios/App
-        run: |
-          xcodebuild -project App.xcodeproj -scheme App -configuration Release \
-            -sdk iphoneos -archivePath build/App.xcarchive archive \
-            MARKETING_VERSION=5.4.1 CURRENT_PROJECT_VERSION=10 \
-            DEVELOPMENT_TEAM=${{ secrets.IOS_TEAM_ID }} \
-            CODE_SIGN_STYLE=Manual \
-            PROVISIONING_PROFILE_SPECIFIER=${{ secrets.IOS_PROFILE_NAME }}
-          xcodebuild -exportArchive -archivePath build/App.xcarchive \
-            -exportPath build/export -exportOptionsPlist ExportOptions.plist
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Espresso-English-ipa
-          path: espresso-english/ios/App/build/export/*.ipa
+# A signed .ipa needs an Apple Developer account and four repository secrets
+# (certificate, password, provisioning profile, team id). The exact steps live in
+# docs/IOS-FA.md — add that job back once the account exists.
