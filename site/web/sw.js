@@ -9,7 +9,7 @@
  *    and this is what makes the app usable with no connection at all.
  */
 
-const VERSION = "espresso-v1";
+const VERSION = "espresso-v2";
 const SHELL = `${VERSION}-shell`;
 const RUNTIME = `${VERSION}-runtime`;
 
