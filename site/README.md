@@ -17,6 +17,7 @@ site/
 ├── en.html                    # English landing page
 ├── gallery.html               # media page — video + screenshot gallery
 ├── gallery.js                 # lightbox for the gallery
+├── permissions.html           # MIUI/Xiaomi permission walkthrough (drawn screens)
 ├── privacy.html               # privacy policy (fa + en, no scripts)
 ├── styles.css                 # all styling, design tokens at the top
 ├── script.js                  # menu, smooth scroll, reveal, copy, modal, pattern layer
@@ -34,24 +35,38 @@ network-capable things in the markup are the placeholder footer links (`href="#"
 
 ---
 
-## Design system — "Clear"
+## Design system — "Roastery"
 
-`styles.css` is organised in numbered sections; the last two are the ones worth knowing about:
+The app is called Espresso English, so the site is built from the coffee it is named after
+rather than from a generic SaaS palette.
 
-- **§14 Pattern + motion.** A fixed, page-wide ambient layer: an aurora mesh
-  (`html::before`) that drifts on `transform` only, a thin diamond line-mesh
-  (`html::after`) masked so it fades below the fold, and a 3 % film-grain overlay.
-  On top of that sit the hero's orbit arc, the marquee strip injected after
-  `#why`, the scroll-progress hairline and the card/button micro-interactions.
-  Every animation is `transform`/`opacity` only, and the whole layer is switched
-  off under `prefers-reduced-motion` — where the hero GIF is swapped for
+**Canvas and structure.** Warm ivory paper (`--bg #FAF4EA`), sand bands (`--bg-soft #F3E8D6`)
+for alternating chapters, and deep espresso (`--espresso #17100A`) for the masthead, hero,
+final CTA and footer. That gives every page a dark → light → dark rhythm, and the sticky
+masthead never has to change state while scrolling.
+
+**One accent.** A single crema ramp — `#8A4A08 → #DFA046 → #F4CE92` — carries every
+highlight: eyebrows, numerals, icon glyphs, focus rings, check marks. Nothing else on the
+page is saturated, which is why the accent reads as deliberate instead of decorative.
+
+**Type.** Vazirmatn variable, 900 for display, `-.03em` tracking on headings, Persian
+numerals throughout, `font-variant-numeric: tabular-nums` on every figure.
+
+**Texture.** `styles.css` is organised in numbered sections; the two worth knowing:
+
+- **§14 Pattern + motion.** A fixed paper lattice (`html::after`, two diamond scales at
+  ~30 % and ~22 % warm brown) that reads as texture on ivory and disappears on the dark
+  bands; a 5 % film grain; the hero's own crema diamond mesh and slow orbit arc; the
+  marquee strip injected after `#why`; the scroll-progress hairline; card and button
+  micro-interactions. Everything is `transform`/`opacity` only and the whole layer is
+  switched off under `prefers-reduced-motion`, where the hero GIF is swapped for
   `hero-poster.webp`.
-- **§15 Accessibility / motion.** Reduced-motion and `prefers-contrast` overrides,
-  plus the print stylesheet.
+- **§16 Permissions page.** `.ms*` draws a believable MIUI settings screen in pure CSS
+  (rows, icon tiles, toggles, green checks) so the walkthrough needs no screenshots and
+  no personal data in the repo.
 
-Palette: white canvas, `--ink #0B1224` type, one brand ramp
-`#4F46E5 → #6366F1 → #8B5CF6`, and supporting teal / amber / coral where a colour
-has a job. Body copy sits at ≥ 4.5:1, headings at ≥ 7:1.
+Contrast: body on ivory 9.8:1, headings 14:1, cream on espresso 15:1, crema on espresso
+7.4:1 — all above the 4.5:1 / 7:1 targets.
 
 The hero phone screen is a **GIF**, not a video or a CSS animation: it keeps the
 page a single static bundle with no autoplay policy, no codec support questions

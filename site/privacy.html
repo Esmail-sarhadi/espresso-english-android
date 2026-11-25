@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#FFFFFF">
+<meta name="theme-color" content="#17100A">
 <meta name="color-scheme" content="light">
-<style>html{background:#FFFFFF}</style>
+<style>html{background:#FAF4EA}</style>
 <title>سیاست حریم خصوصی · Espresso English</title>
 <meta name="description" content="سیاست حفظ حریم خصوصی اپلیکیشن Espresso English — بدون ثبت‌نام، بدون تبلیغ، بدون ردیابی.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234F46E5'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23FFFFFF' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23FFFFFF'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2317100A'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23DFA046' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='6.5' fill='%23F4CE92'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/fonts.css">
 <style>
   :root{
-    --bg:#FFFFFF; --bg-soft:#F6F8FD; --bg-tint:#EEF2FF;
-    --ink:#0B1224; --ink-2:#46536B; --ink-3:#6B7891;
-    --line:#E4E9F3; --line-2:#D2DAE8;
-    --brand:#4F46E5; --brand-2:#6366F1; --brand-3:#8B5CF6; --brand-ink:#3730A3;
-    --teal:#00A98F; --amber:#F59E0B; --coral:#EF4444;
+    --bg:#FAF4EA; --bg-soft:#F3E8D6; --bg-tint:#FBEAD0;
+    --ink:#1A1109; --ink-2:#574434; --ink-3:#7E6A55;
+    --line:#E7D8C2; --line-2:#D3BDA1;
+    --brand:#A85E10; --brand-2:#DFA046; --brand-3:#F4CE92; --brand-ink:#8A4A08;
+    --teal:#2F6B4F; --amber:#DFA046; --coral:#B4442E;
   }
   *{box-sizing:border-box}
   body{
@@ -27,21 +27,21 @@
   body::before{
     content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
     background:
-      radial-gradient(760px 500px at 88% -8%, rgba(99,102,241,.10), transparent 66%),
-      radial-gradient(620px 440px at 4% 4%, rgba(0,169,143,.07), transparent 68%);
+      radial-gradient(760px 500px at 88% -8%, rgba(223,160,70,.16), transparent 66%),
+      radial-gradient(620px 440px at 4% 4%, rgba(168,94,16,.08), transparent 68%);
   }
   .wrap{position:relative; z-index:1; max-width:820px; margin:0 auto; padding:0 22px}
   header{padding:30px 0 8px}
   .back{
     display:inline-flex; align-items:center; gap:8px; color:var(--ink-2); text-decoration:none;
-    border:1px solid var(--line-2); background:#FFF; border-radius:12px;
+    border:1px solid var(--line-2); background:#FFFCF6; border-radius:12px;
     padding:9px 15px; font-size:14.5px; font-weight:600;
-    box-shadow:0 1px 2px rgba(11,18,36,.04);
+    box-shadow:0 1px 2px rgba(58,36,14,.05);
     transition:color .25s cubic-bezier(.16,1,.3,1), border-color .25s cubic-bezier(.16,1,.3,1), transform .25s cubic-bezier(.16,1,.3,1), box-shadow .25s cubic-bezier(.16,1,.3,1);
   }
   .back:hover{
-    color:var(--brand); border-color:#C7CBF7; transform:translateY(-1px);
-    box-shadow:0 8px 20px -12px rgba(79,70,229,.5);
+    color:var(--brand-ink); border-color:#E2C69B; transform:translateY(-1px);
+    box-shadow:0 8px 20px -12px rgba(168,94,16,.35);
   }
   h1{
     font-size:clamp(28px,4vw,42px); line-height:1.32; margin:28px 0 8px;
@@ -49,9 +49,9 @@
   }
   .sub{color:var(--ink-3); font-size:15px; margin:0 0 32px}
   .card{
-    background:#FFF; border:1px solid var(--line); border-radius:20px;
+    background:#FFFCF6; border:1px solid var(--line); border-radius:20px;
     padding:28px 26px; margin:0 0 18px;
-    box-shadow:0 1px 2px rgba(11,18,36,.035), 0 14px 34px -26px rgba(11,18,36,.28);
+    box-shadow:0 1px 2px rgba(58,36,14,.04), 0 14px 34px -26px rgba(58,36,14,.22);
   }
   h2{
     font-size:19.5px; margin:0 0 12px; color:var(--brand-ink); font-weight:800;
@@ -66,15 +66,15 @@
   table{width:100%; border-collapse:collapse; margin:16px 0; font-size:15px}
   th,td{border:1px solid var(--line); padding:11px 13px; text-align:right; vertical-align:top}
   th{background:var(--bg-tint); color:var(--brand-ink); font-weight:800; font-size:14.5px}
-  tbody tr:nth-child(even) td{background:#FAFBFF}
+  tbody tr:nth-child(even) td{background:#FDF7ED}
   code{
     background:var(--bg-tint); color:var(--brand-ink); padding:2px 7px;
     border-radius:7px; font-size:14px; font-weight:600;
     font-family:"Vazirmatn","Segoe UI",system-ui,sans-serif;
   }
   .badge{
-    display:inline-block; background:rgba(0,169,143,.10); color:#00796A;
-    border:1px solid rgba(0,169,143,.24); border-radius:999px;
+    display:inline-block; background:rgba(223,160,70,.14); color:var(--brand-ink);
+    border:1px solid rgba(168,94,16,.28); border-radius:999px;
     padding:4px 12px; font-size:12.5px; font-weight:800; margin-inline-end:6px;
     margin-bottom:4px;
   }
@@ -84,7 +84,7 @@
   footer{margin:40px 0 60px; color:var(--ink-3); font-size:14px; text-align:center}
   a.mail{
     color:var(--brand); text-decoration:none; font-weight:700;
-    border-bottom:1px solid #C7CBF7;
+    border-bottom:1px solid #E2C69B;
   }
   a.mail:hover{border-bottom-color:var(--brand)}
   a.mail:focus-visible, .back:focus-visible{
