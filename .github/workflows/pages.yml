@@ -25,9 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: actions/configure-pages@v5
 
@@ -35,5 +35,22 @@ jobs:
         with:
           path: site
 
+      # GitHub's artifact list is eventually consistent: deploy-pages occasionally runs
+      # before the artifact it just uploaded is indexed and dies with
+      # 'No artifacts named "github-pages" were found for this workflow run'
+      # (run 45572441261 failed exactly this way). Give the index a moment first.
+      - name: Let the artifact index settle
+        run: sleep 15
+
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      # One retry. By the second attempt the artifact is always visible, so a transient
+      # index lag no longer fails the whole deployment and leaves the site stale.
+      - id: retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+
+      - name: Report the deployment URL
+        run: echo "Published ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}"
